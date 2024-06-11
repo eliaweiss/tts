@@ -118,11 +118,17 @@ function createPhrases(phrases) {
 
       readAloud_en(phrases[index].en);
       await waitForSeconds(3); 
+      if (!isReading) break
       readAloud_pt(phrases[index].pt);
+      if (!isReading) break
       await waitForSeconds(3); 
+      if (!isReading) break
       readAloud_pt(addCommas(phrases[index].pt));
+      if (!isReading) break
       await waitForSeconds(3); 
+      if (!isReading) break
       readAloud_pt(phrases[index].pt);
+      if (!isReading) break
       await waitForSeconds(6); 
       
       
