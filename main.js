@@ -1,5 +1,6 @@
 
 
+///////////////////////////////////
 function createPhrases(phrases) {
     const container = document.createElement('div');
     container.classList.add('phrases-container'); // Add a class for styling
@@ -24,7 +25,7 @@ function createPhrases(phrases) {
 
       const buttonReadAloud = document.createElement('button');
       buttonReadAloud.textContent = 'Ouvir (PT)'; // Portuguese for "Listen (PT)"
-      buttonReadAloud.addEventListener('click', () => readAloud(phrase.pt));
+      buttonReadAloud.addEventListener('click', () => readAloud_pt(phrase.pt));
       buttons.appendChild(buttonReadAloud)
 
       const buttonShowTranslation = document.createElement('button');
@@ -59,13 +60,15 @@ function createPhrases(phrases) {
 
   let voices = [];
 
+  ///////////////////////////////////
   function loadVoices() {
     voices = window.speechSynthesis.getVoices();
     // Example usage
     createPhrases(phrases);
   }
 
-  function readAloud(text) {
+  ///////////////////////////////////
+  function readAloud_pt(text) {
     const utterance = new SpeechSynthesisUtterance(text);
     utterance.lang = 'pt-BR';
 
@@ -78,11 +81,27 @@ function createPhrases(phrases) {
     window.speechSynthesis.speak(utterance);
   }
 
+  ///////////////////////////////////
+  function readAloud_en(text) {
+    const utterance = new SpeechSynthesisUtterance(text);
+    utterance.lang = 'en-US';
+
+    // Select a specific voice for Brazilian Portuguese if available
+    const selectedVoice = voices.find(voice => voice.lang === 'en-US' && voice.name.includes('Google'));
+    if (selectedVoice) {
+      utterance.voice = selectedVoice;
+    }
+
+    window.speechSynthesis.speak(utterance);
+  }
+
   window.speechSynthesis.onvoiceschanged = loadVoices;
 
+  ///////////////////////////////////
   // New function to read all pt phrases with a pause
   let isReading = false; // Global boolean variable
   waitTime = 4000
+  ///////////////////////////////////
   async function readAllPhrases() {
     if (isReading) {
       isReading = false; // Stop reading if already running
@@ -96,9 +115,16 @@ function createPhrases(phrases) {
       document.querySelector('#currentPhrase .pt').textContent = phrases[index].pt;
       document.querySelector('#currentPhrase .en').textContent = phrases[index].en;
   
-      readAloud(phrases[index].pt);
+
+      readAloud_en(phrases[index].en);
+      await waitForSeconds(3); 
+      readAloud_pt(phrases[index].pt);
+      await waitForSeconds(3); 
+      readAloud_pt(addCommas(phrases[index].pt));
+      await waitForSeconds(3); 
+      readAloud_pt(phrases[index].pt);
+      await waitForSeconds(6); 
       
-      await new Promise(resolve => setTimeout(resolve, waitTime)); // Wait for 2 seconds
       
       index++;        
       if (index >= phrases.length) {
@@ -109,3 +135,19 @@ function createPhrases(phrases) {
     isReading = false; // Set to false after reading all phrases
   
   }
+///////////////////////////////////
+
+function addCommas(text) {
+    // Split the text into a list of words using whitespace as the delimiter
+    const words = text.split(/\s+/);
+  
+    // Join the words back together with commas as separators
+    const commaSeparatedString = words.join(", ");
+  
+    return commaSeparatedString;
+  }
+///////////////////////////////////
+  async function waitForSeconds(ss) {
+    await new Promise(resolve => setTimeout(resolve, ss*1000));
+}
+
