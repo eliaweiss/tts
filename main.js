@@ -56,32 +56,37 @@ function loadVoices() {
     createPhrases(phrases);
 }
 
-///////////////////////////////////
-function readAloud_pt(text) {
-    const utterance = new SpeechSynthesisUtterance(text);
-    utterance.lang = 'pt-BR';
+async function readAloud(text, lang) {
+    return new Promise((resolve, reject) => {
+        const utterance = new SpeechSynthesisUtterance(text);
+        utterance.lang = lang;
 
-    // Select a specific voice for Brazilian Portuguese if available
-    const selectedVoice = voices.find(voice => voice.lang === 'pt-BR' && voice.name.includes('Google'));
-    if (selectedVoice) {
-        utterance.voice = selectedVoice;
-    }
+        // Select a specific voice for Brazilian Portuguese if available
+        const selectedVoice = voices.find(voice => voice.lang === lang && voice.name.includes('Google'));
+        if (selectedVoice) {
+            utterance.voice = selectedVoice;
+        }
 
-    window.speechSynthesis.speak(utterance);
+        utterance.onend = function(event) {
+            console.log('Speech synthesis finished.');
+            resolve(); // Resolve the promise when speech synthesis is finished
+        };
+
+        utterance.onerror = function(event) {
+            reject(event.error); // Reject the promise if there's an error during speech synthesis
+        };
+
+        window.speechSynthesis.speak(utterance);
+    });
 }
 
 ///////////////////////////////////
-function readAloud_en(text) {
-    const utterance = new SpeechSynthesisUtterance(text);
-    utterance.lang = 'en-US';
-
-    // Select a specific voice for Brazilian Portuguese if available
-    const selectedVoice = voices.find(voice => voice.lang === 'en-US' && voice.name.includes('Google'));
-    if (selectedVoice) {
-        utterance.voice = selectedVoice;
-    }
-
-    window.speechSynthesis.speak(utterance);
+async function readAloud_pt(text) {
+    await readAloud(text, 'pt-BR')
+}
+///////////////////////////////////
+async function readAloud_en(text) {
+    await readAloud(text, 'en-US')
 }
 
 window.speechSynthesis.onvoiceschanged = loadVoices;
@@ -111,21 +116,21 @@ async function readAllPhrases() {
 
 
         if (phrases[index].en) {
-            readAloud_en(phrases[index].en);
-            await waitForSeconds(3);
+            await readAloud_en(phrases[index].en);
+            await waitForSeconds(1);
         }
         if (!isReading) break
-        readAloud_pt(phrases[index].pt);
+        await readAloud_pt(phrases[index].pt);
         if (!isReading) break
-        await waitForSeconds(3);
+        await waitForSeconds(1);
         if (!isReading) break
-        readAloud_pt(addCommas(phrases[index].pt));
+        await readAloud_pt(addCommas(phrases[index].pt));
         if (!isReading) break
-        await waitForSeconds(3);
+        await waitForSeconds(1);
         if (!isReading) break
-        readAloud_pt(phrases[index].pt);
+        await readAloud_pt(phrases[index].pt);
         if (!isReading) break
-        await waitForSeconds(6);
+        await waitForSeconds(2);
         if (!isReading) break
 
 

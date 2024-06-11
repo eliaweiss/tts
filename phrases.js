@@ -64,4 +64,7 @@ var phrases = [
     { pt: 'Sim, aceitamos cartões de crédito e débito.', en: 'Yes, we accept credit and debit cards.' },
 
     { pt: 'um, dois,três, quatro, cinco, seis, sete, oito, nove, dez', en: null},
+    { pt: 'onze, doze, treze, quatorze, quinze, dezesseis, dezessete, dezoito, dezenove, vinte', en: null},
+    { pt: 'domingo, segunda-feira, terça-feira, quarta-feira, quinta-feira, sexta-feira, sábado', en: null},
+    { pt: 'janeiro, fevereiro, março, abril, maio, junho, julho, agosto, setembro, outubro, novembro, dezembro', en: null},
 ];
