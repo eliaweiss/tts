@@ -18,7 +18,7 @@ var phrases = [
     { pt: 'Onde está o supermercado mais próximo?', en: 'Where is the nearest supermarket?' },
     { pt: 'Onde você estudou?', en: 'Where did you study?' },
     { pt: 'Onde está o ponto de ônibus?', en: 'Where is the bus stop?' },
-    { pt: 'Onde você estava ontem?', en: 'Where were you yesterday?' } ,
+    { pt: 'Onde você estava ontem?', en: 'Where were you yesterday?' },
 
     { pt: 'Meu nome é João.', en: 'My name is João.' },
     { pt: 'Eu tenho 25 anos.', en: 'I am 25 years old.' },
@@ -39,7 +39,7 @@ var phrases = [
     { pt: 'O supermercado mais próximo está a duas quadras daqui.', en: 'The nearest supermarket is two blocks away.' },
     { pt: 'Eu estudei na Universidade de São Paulo.', en: 'I studied at the University of São Paulo.' },
     { pt: 'O ponto de ônibus está naquela direção.', en: 'The bus stop is in that direction.' },
-    { pt: 'Eu estava em casa ontem.', en: 'I was at home yesterday.' },    
+    { pt: 'Eu estava em casa ontem.', en: 'I was at home yesterday.' },
 
     { pt: 'Por favor, pode me ajudar?', en: 'Please, can you help me?' },
     { pt: 'Quanto custa isso?', en: 'How much does this cost?' },
@@ -51,15 +51,17 @@ var phrases = [
     { pt: 'Eu gostaria de uma mesa para duas pessoas.', en: 'I would like a table for two, please.' },
     { pt: 'Qual é o horário de funcionamento?', en: 'What are the opening hours?' },
     { pt: 'Posso pagar com cartão?', en: 'Can I pay with a card?' },
-    
+
     { pt: 'Claro, estou aqui para ajudar.', en: 'Of course, I\'m here to help.' },
-        { pt: 'Isso custa R$ 20.', en: 'That costs $20.' },
-        { pt: 'Posso explicar de outra forma?', en: 'Can I explain it differently?' },
-        { pt: 'Sim, eu falo inglês fluentemente.', en: 'Yes, I speak English fluently.' },
-        { pt: 'Vou chamar um médico imediatamente.', en: 'I will call a doctor immediately.' },
-        { pt: 'O hotel fica na rua principal.', en: 'The hotel is on the main street.' },
-        { pt: 'Claro, eu posso repetir.', en: 'Sure, I can repeat.' },
-        { pt: 'Certamente, vou providenciar uma mesa para duas pessoas.', en: 'Certainly, I will arrange a table for two.' },
-        { pt: 'Estamos abertos das 9h às 18h, de segunda a sexta-feira.', en: 'We are open from 9am to 6pm, Monday to Friday.' },
-        { pt: 'Sim, aceitamos cartões de crédito e débito.', en: 'Yes, we accept credit and debit cards.' } 
-    ];
+    { pt: 'Isso custa R$ 20.', en: 'That costs $20.' },
+    { pt: 'Posso explicar de outra forma?', en: 'Can I explain it differently?' },
+    { pt: 'Sim, eu falo inglês fluentemente.', en: 'Yes, I speak English fluently.' },
+    { pt: 'Vou chamar um médico imediatamente.', en: 'I will call a doctor immediately.' },
+    { pt: 'O hotel fica na rua principal.', en: 'The hotel is on the main street.' },
+    { pt: 'Claro, eu posso repetir.', en: 'Sure, I can repeat.' },
+    { pt: 'Certamente, vou providenciar uma mesa para duas pessoas.', en: 'Certainly, I will arrange a table for two.' },
+    { pt: 'Estamos abertos das 9h às 18h, de segunda a sexta-feira.', en: 'We are open from 9am to 6pm, Monday to Friday.' },
+    { pt: 'Sim, aceitamos cartões de crédito e débito.', en: 'Yes, we accept credit and debit cards.' },
+
+    { pt: 'um, dois,três, quatro, cinco, seis, sete, oito, nove, dez', en: null},
+];

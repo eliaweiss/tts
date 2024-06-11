@@ -110,8 +110,10 @@ async function readAllPhrases() {
         document.querySelector('#currentPhrase .en').textContent = phrases[index].en;
 
 
-        readAloud_en(phrases[index].en);
-        await waitForSeconds(3);
+        if (phrases[index].en) {
+            readAloud_en(phrases[index].en);
+            await waitForSeconds(3);
+        }
         if (!isReading) break
         readAloud_pt(phrases[index].pt);
         if (!isReading) break
