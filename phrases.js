@@ -1,4 +1,4 @@
-const phrases = [
+var phrases = [
     { pt: 'Qual é o seu nome?', en: 'What is your name?' },
     { pt: 'Qual é a sua idade?', en: 'How old are you?' },
     { pt: 'Qual é a sua profissão?', en: 'What is your profession?' },
@@ -8,5 +8,15 @@ const phrases = [
     { pt: 'Qual é o seu time de futebol favorito?', en: 'What is your favorite soccer team?' },
     { pt: 'Qual é a data de hoje?', en: 'What is today\'s date?' },
     { pt: 'Qual é o seu filme favorito?', en: 'What is your favorite movie?' },
-    { pt: 'Qual é a sua comida favorita?', en: 'What is your favorite food?' }
+    { pt: 'Qual é a sua comida favorita?', en: 'What is your favorite food?' },
+    { pt: 'Onde você mora?', en: 'Where do you live?' },
+    { pt: 'Onde você trabalha?', en: 'Where do you work?' },
+    { pt: 'Onde está o banheiro?', en: 'Where is the bathroom?' },
+    { pt: 'Onde fica a estação de trem?', en: 'Where is the train station?' },
+    { pt: 'Onde você nasceu?', en: 'Where were you born?' },
+    { pt: 'Onde está o restaurante?', en: 'Where is the restaurant?' },
+    { pt: 'Onde está o supermercado mais próximo?', en: 'Where is the nearest supermarket?' },
+    { pt: 'Onde você estudou?', en: 'Where did you study?' },
+    { pt: 'Onde está o ponto de ônibus?', en: 'Where is the bus stop?' },
+    { pt: 'Onde você estava ontem?', en: 'Where were you yesterday?' }    
     ];

@@ -103,6 +103,8 @@ async function readAllPhrases() {
     document.querySelector('#playStatus').classList.remove('hidden');  // Toggle hidden class
 
     index = 0
+    phrases = randomPermutation(phrases)
+
     while (isReading) {
         // Update current phrase display
         document.querySelector('#currentPhrase .pt').textContent = phrases[index].pt;
@@ -129,6 +131,7 @@ async function readAllPhrases() {
         index++;
         if (index >= phrases.length) {
             index = 0
+            phrases = randomPermutation(phrases)
         }
     }
 
@@ -151,3 +154,14 @@ async function waitForSeconds(ss) {
     await new Promise(resolve => setTimeout(resolve, ss * 1000));
 }
 
+
+///////////////////////////////////
+
+function randomPermutation(data) {
+    const perm = data.slice();
+  
+    // Randomly shuffle the elements of the list
+    perm.sort(() => Math.random() - 0.5);
+  
+    return perm;
+  }
