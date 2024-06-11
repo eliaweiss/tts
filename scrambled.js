@@ -8,9 +8,9 @@ async function playSentence() {
 }
 async function playScrambledSentence() {
     document.querySelector('#scrambled-result').classList.add('hidden');  // Toggle hidden class
-
     document.querySelector('#scrambled-game').classList.remove('hidden');  // Toggle hidden class
-
+    document.getElementById('scrambled-en').textContent= phrases[index].en
+    
     await playSentence();
 
     // Get the current Portuguese sentence
@@ -49,9 +49,9 @@ function handleClickWord(word) {
             console.log("Correct! Move to next sentence.");
             document.querySelector('#scrambled-game').classList.add('hidden');  // Toggle hidden class
             document.querySelector('#scrambled-result').classList.remove('hidden');  // Toggle hidden class
-
             // Play audio or move to next sentence logic here
             userBuffer = ""; // Reset user buffer for next sentence
+            document.getElementById('scrambled-en').textContent=""
             document.getElementById("userBuffer").textContent = ""
             document.getElementById("scrambledSentence").innerHTML = "";
             numberOfWordClicked=0
