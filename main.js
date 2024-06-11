@@ -92,6 +92,8 @@ let isReading = false; // Global boolean variable
 let isPlaying = false
 waitTime = 4000
 ///////////////////////////////////
+index = 0
+phrases = randomPermutation(phrases)
 async function readAllPhrases() {
     if (isReading || isPlaying) {
         isReading = false; // Stop reading if already running
@@ -101,9 +103,6 @@ async function readAllPhrases() {
 
     isPlaying = isReading = true; // Set to true at the beginning
     document.querySelector('#playStatus').classList.remove('hidden');  // Toggle hidden class
-
-    index = 0
-    phrases = randomPermutation(phrases)
 
     while (isReading) {
         // Update current phrase display
@@ -129,6 +128,7 @@ async function readAllPhrases() {
 
 
         index++;
+        // console.log('index: ' + index);
         if (index >= phrases.length) {
             index = 0
             phrases = randomPermutation(phrases)
