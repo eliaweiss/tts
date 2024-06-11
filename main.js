@@ -1,51 +1,5 @@
 
 
-///////////////////////////////////
-function createPhrases(phrases) {
-    const container = document.createElement('div');
-    container.classList.add('phrases-container'); // Add a class for styling
-
-    phrases.forEach(phrase => {
-        const phraseDiv = document.createElement('div');
-        phraseDiv.classList.add('phrase'); // Add a class for styling
-
-        const paragraph = document.createElement('div');
-        paragraph.classList.add('pt')
-        paragraph.textContent = phrase.pt;
-
-        // Create a span element to hold the English translation
-        const translationSpan = document.createElement('div');
-        translationSpan.classList.add('en'); // Hide the translation initially
-        translationSpan.classList.add('hidden'); // Hide the translation initially
-        translationSpan.textContent = phrase.en;
-
-
-        const buttons = document.createElement('div');
-        buttons.classList.add('buttons'); // Hide the translation initially
-
-        const buttonReadAloud = document.createElement('button');
-        buttonReadAloud.textContent = 'Ouvir (PT)'; // Portuguese for "Listen (PT)"
-        buttonReadAloud.addEventListener('click', () => readAloud_pt(phrase.pt));
-        buttons.appendChild(buttonReadAloud)
-
-        const buttonShowTranslation = document.createElement('button');
-        buttonShowTranslation.textContent = 'Tradução (EN)'; // Portuguese for "Translation (EN)"
-        buttons.appendChild(buttonShowTranslation)
-        // Add click event listener to toggle the visibility of the translation
-        buttonShowTranslation.addEventListener('click', () => {
-            translationSpan.classList.toggle('hidden');  // Toggle hidden class
-        });
-
-
-        phraseDiv.appendChild(paragraph);
-        phraseDiv.appendChild(translationSpan);
-        phraseDiv.appendChild(buttons);
-        container.appendChild(phraseDiv);
-    });
-
-    document.body.appendChild(container);
-}
-
 
 let voices = [];
 
