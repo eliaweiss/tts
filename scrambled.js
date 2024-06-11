@@ -54,7 +54,7 @@ function deleteLastWord_helper(str) {
   }
 function deleteWord() {
     numberOfWordClicked--;
-    userBuffer = deleteLastWord_helper(userBuffer.trim())
+    userBuffer = deleteLastWord_helper(userBuffer.trim())+" ";
     document.getElementById("userBuffer").textContent = userBuffer.trim();
 }
 async function handleClickWord(word) {
