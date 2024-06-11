@@ -30,7 +30,7 @@ async function playScrambledSentence() {
     words = currentSentencePt.split(" "); // Split into words
 
     // Randomly scramble the words
-    const scrambledWords = randomPermutation(randomPermutation(words));
+    const scrambledWords = randomPermutation(words);
 
     // Clear user buffer and display area
     userBuffer = "";
