@@ -82,23 +82,30 @@ function createPhrases(phrases) {
 
   // New function to read all pt phrases with a pause
   let isReading = false; // Global boolean variable
-
+  waitTime = 4000
   async function readAllPhrases() {
     if (isReading) {
-      isReading =  false; //
-      return
+      isReading = false; // Stop reading if already running
+      return;
     }
     isReading = true; // Set to true at the beginning
-
-    let index = 0;
+  
+    index = 0   
     while (isReading) {
+      // Update current phrase display
+      document.querySelector('#currentPhrase .pt').textContent = phrases[index].pt;
+      document.querySelector('#currentPhrase .en').textContent = phrases[index].en;
+  
       readAloud(phrases[index].pt);
-      index++;
-      await new Promise(resolve => setTimeout(resolve, 2000)); // Wait for 2 seconds
-
-
+      
+      await new Promise(resolve => setTimeout(resolve, waitTime)); // Wait for 2 seconds
+      
+      index++;        
       if (index >= phrases.length) {
         index=0
-      }
+      }      
     }
+  
+    isReading = false; // Set to false after reading all phrases
+  
   }
