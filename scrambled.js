@@ -7,6 +7,10 @@ async function playSentence() {
     await readAloud_pt(phrases[index].pt);
 }
 async function playScrambledSentence() {
+    document.querySelector('#scrambled-result').classList.add('hidden');  // Toggle hidden class
+
+    document.querySelector('#scrambled-game').classList.remove('hidden');  // Toggle hidden class
+
     await playSentence();
 
     // Get the current Portuguese sentence
@@ -43,11 +47,14 @@ function handleClickWord(word) {
         // Check if user buffer matches the original sentence (excluding punctuation)
         if (userBuffer.trim().replace(/punctuation/g, "") === currentSentencePt) {
             console.log("Correct! Move to next sentence.");
+            document.querySelector('#scrambled-game').classList.add('hidden');  // Toggle hidden class
+            document.querySelector('#scrambled-result').classList.remove('hidden');  // Toggle hidden class
+
             // Play audio or move to next sentence logic here
             userBuffer = ""; // Reset user buffer for next sentence
             numberOfWordClicked=0
             index++
-            playScrambledSentence()
+            setTimeout(playScrambledSentence,1000)
         } else {
             userBuffer = ""; // Reset user buffer for next sentence
             numberOfWordClicked=0

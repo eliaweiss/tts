@@ -26,11 +26,16 @@
   <h2>Scrambled Sentence</h2>
   <button class="playScrambledSentence btn" onclick="playScrambledSentence()">Start Scrambled Sentence</button>
   <div class="phrase">
+    <div id="scrambled-result" class="hidden user-buffer">
+      Correct! Move to next sentence.
+    </div>
+    <div id="scrambled-game" class="hidden">
 
-    <div id="scrambledSentence" class="scrambled-words"></div>
-    <div id="userBuffer" class="user-buffer"></div>
-    <button class="btn" onclick="playSentence()">Re-play sentence</button>
-    
+      <div id="scrambledSentence" class="scrambled-words"></div>
+      <div id="userBuffer" class="user-buffer"></div>
+      <button class="btn" onclick="playSentence()">Re-play sentence</button>
+    </div>
+
   </div>
 </div>
 
