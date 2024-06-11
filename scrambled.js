@@ -43,6 +43,20 @@ async function playScrambledSentence() {
     });
 }
 
+function deleteLastWord_helper(str) {
+    const lastSpaceIndex = str.lastIndexOf(" ");
+    if (lastSpaceIndex !== -1) {
+      return str.slice(0, lastSpaceIndex);
+    } else {
+      // Handle case where there's no space (single word sentence)
+      return "";
+    }
+  }
+function deleteWord() {
+    numberOfWordClicked--;
+    userBuffer = deleteLastWord_helper(userBuffer.trim())
+    document.getElementById("userBuffer").textContent = userBuffer.trim();
+}
 async function handleClickWord(word) {
     numberOfWordClicked++
     userBuffer += word + " ";
