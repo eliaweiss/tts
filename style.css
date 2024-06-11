@@ -52,16 +52,14 @@ body {
     /* Gray out the translation for a subtle effect */
 }
 
-.buttons button,.btn {
-    margin-right: 0.5rem;
+.buttons button,.btn,.scrambled-word {
+    margin: 0.5rem;
     /* Add some space between buttons */
-    padding: 0.5rem 1rem;
+    padding: 0.5rem;
     /* Add some padding for buttons */
     border: none;
     /* Remove default button border */
     border-radius: 5px;
-    /* Rounded corners for buttons */
-    background-color: #eee;
     /* Light gray background for buttons */
     cursor: pointer;
     /* Indicate clickable buttons */
@@ -70,6 +68,12 @@ body {
     color: white; /* White text for buttons */ 
 }
 
+.scrambled-word {
+    background-color: #4981ac; /* Green color for read aloud buttons */
+    margin: 0.2rem;
+    /* Add some space between buttons */
+    padding: 0.2rem;
+}
 .buttons button:hover {
     background-color: #ddd;
     /* Slightly darker background on hover */
