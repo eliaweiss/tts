@@ -8,18 +8,32 @@
   <link rel="stylesheet" href="style.css">
   <script src="phrases.js"></script>
   <script src="main.js"></script>
+  <script src="scrambled.js"></script>
 </head>
 
 <body>
   <div class="playAllContainer phrase">
     <button class="playAllBtn btn" onclick="readAllPhrases()">Ler todas as frases (PT)</button>
     <div id="playStatus" class="hidden">Playing...</div>
-    <div id="currentPhrase"  class="phrase">
+    <div id="currentPhrase" class="phrase">
       <div class="en"></div>
-        <div class="pt"></div>
+      <div class="pt"></div>
     </div>
   </div>
 </body>
+
+<div class="scrambledSentenceContainer phrase">
+  <h2>Scrambled Sentence</h2>
+  <button class="playScrambledSentence btn" onclick="playScrambledSentence()">Start Scrambled Sentence</button>
+  <div class="phrase">
+
+    <div id="scrambledSentence" class="scrambled-words"></div>
+    <div id="userBuffer" class="user-buffer"></div>
+    <br>
+    <button class="btn" onclick="playSentence()">re-play Sentence</button>
+    
+  </div>
+</div>
 
 </body>
 

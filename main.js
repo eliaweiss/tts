@@ -7,6 +7,9 @@ let voices = [];
 function loadVoices() {
     voices = window.speechSynthesis.getVoices();
 }
+window.speechSynthesis.onvoiceschanged = loadVoices;
+
+///////////////////////////////////
 
 async function readAloud(text, lang) {
     return new Promise((resolve, reject) => {
@@ -41,16 +44,15 @@ async function readAloud_en(text) {
     await readAloud(text, 'en-US')
 }
 
-window.speechSynthesis.onvoiceschanged = loadVoices;
 
 ///////////////////////////////////
-// New function to read all pt phrases with a pause
-let isReading = false; // Global boolean variable
+// Global variable
+let isReading = false; 
 let isPlaying = false
 waitTime = 4000
-///////////////////////////////////
 index = 0
 phrases = randomPermutation(phrases)
+///////////////////////////////////
 async function readAllPhrases() {
     if (isReading || isPlaying) {
         isReading = false; // Stop reading if already running
