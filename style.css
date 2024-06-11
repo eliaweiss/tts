@@ -79,6 +79,12 @@ body {
     /* Slightly darker background on hover */
 }
 
+.delete {
+    background-color: #2e2929;
+    color: white;
+
+}
+
 .hidden {
     display: none;
 }
