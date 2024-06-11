@@ -7,11 +7,18 @@ async function playSentence() {
     await readAloud_pt(phrases[index].pt);
 }
 async function startScrambledSentence() {
+    currentSentencePt = "";
+    userBuffer = "";
+    numberOfWordClicked = 0    
     document.getElementById('scrambledSentenceContainer').classList.remove('hidden')
     index++
     playScrambledSentence()
 }
 async function playScrambledSentence() {
+    if (index >= phrases.length) {
+        index = 0
+        phrases = randomPermutation(phrases)
+    }    
     document.querySelector('#scrambled-result').classList.add('hidden');  // Toggle hidden class
     document.querySelector('#scrambled-game').classList.remove('hidden');  // Toggle hidden class
     document.getElementById('scrambled-en').textContent= phrases[index].en
