@@ -54,6 +54,8 @@ index = 0
 phrases = randomPermutation(phrases)
 ///////////////////////////////////
 async function readAllPhrases() {
+    document.getElementById('playAllContainer').classList.remove('hidden')
+
     if (isReading || isPlaying) {
         isReading = false; // Stop reading if already running
         document.querySelector('#playStatus').classList.add('hidden');  // Toggle hidden class
@@ -65,8 +67,8 @@ async function readAllPhrases() {
 
     while (isReading) {
         // Update current phrase display
-        document.querySelector('#currentPhrase .pt').textContent = phrases[index].pt;
-        document.querySelector('#currentPhrase .en').textContent = phrases[index].en;
+        document.querySelector('#playAllContainer .pt').textContent = phrases[index].pt;
+        document.querySelector('#playAllContainer .en').textContent = phrases[index].en;
 
 
         if (phrases[index].en) {

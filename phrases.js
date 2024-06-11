@@ -63,7 +63,7 @@ var phrases = [
     { pt: 'Estamos abertos das 9h às 18h, de segunda a sexta-feira.', en: 'We are open from 9am to 6pm, Monday to Friday.' },
     { pt: 'Sim, aceitamos cartões de crédito e débito.', en: 'Yes, we accept credit and debit cards.' },
 
-    { pt: 'um, dois,três, quatro, cinco, seis, sete, oito, nove, dez', en: "count one to ten"},
+    { pt: 'um, dois, três, quatro, cinco, seis, sete, oito, nove, dez', en: "count one to ten"},
     { pt: 'onze, doze, treze, quatorze, quinze, dezesseis, dezessete, dezoito, dezenove, vinte', en: "count 11 to 20"},
     { pt: 'domingo, segunda-feira, terça-feira, quarta-feira, quinta-feira, sexta-feira, sábado', en: "days of week"},
     { pt: 'janeiro, fevereiro, março, abril, maio, junho, julho, agosto, setembro, outubro, novembro, dezembro', en: "name of months"},

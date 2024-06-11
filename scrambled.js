@@ -6,6 +6,11 @@ let words
 async function playSentence() {
     await readAloud_pt(phrases[index].pt);
 }
+async function startScrambledSentence() {
+    document.getElementById('scrambledSentenceContainer').classList.remove('hidden')
+    index++
+    playScrambledSentence()
+}
 async function playScrambledSentence() {
     document.querySelector('#scrambled-result').classList.add('hidden');  // Toggle hidden class
     document.querySelector('#scrambled-game').classList.remove('hidden');  // Toggle hidden class
@@ -18,7 +23,7 @@ async function playScrambledSentence() {
     words = currentSentencePt.split(" "); // Split into words
 
     // Randomly scramble the words
-    const scrambledWords = randomPermutation(words);
+    const scrambledWords = randomPermutation(randomPermutation(words));
 
     // Clear user buffer and display area
     userBuffer = "";
@@ -30,7 +35,7 @@ async function playScrambledSentence() {
     scrambledWords.forEach(word => {
         const button = document.createElement("button");
         button.classList.add("scrambled-word");
-        button.textContent = word;
+        button.textContent = word.toLowerCase().replace(".", "").replace("?", "").replace(/punctuation/g, "");
         button.onclick = function () {
             handleClickWord(word);
         };
@@ -38,9 +43,11 @@ async function playScrambledSentence() {
     });
 }
 
-function handleClickWord(word) {
+async function handleClickWord(word) {
     numberOfWordClicked++
     userBuffer += word + " ";
+    await readAloud_pt(word);
+
     document.getElementById("userBuffer").textContent = userBuffer.trim();
 
     if (numberOfWordClicked == words.length) {
@@ -60,8 +67,11 @@ function handleClickWord(word) {
         } else {
             userBuffer = ""; // Reset user buffer for next sentence
             numberOfWordClicked=0
-
-            playScrambledSentence()            
+            document.getElementById('scrambled-en').textContent=""
+            document.getElementById("userBuffer").textContent = ""
+            document.getElementById("scrambledSentence").innerHTML = ""; 
+            setTimeout(playScrambledSentence,1000)
+        
         }
     }
 }

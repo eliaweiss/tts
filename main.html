@@ -12,20 +12,22 @@
 </head>
 
 <body>
-  <div class="playAllContainer phrase">
-    <button class="playAllBtn btn" onclick="readAllPhrases()">Ler todas as frases (PT)</button>
-    <div id="playStatus" class="hidden">Playing...</div>
-    <div id="currentPhrase" class="phrase">
+  <div class="phrase">
+    <h2>Play Sentence in a loop</h2>
+
+    <button class="playAllBtn btn" onclick="readAllPhrases()">Play/pause Sentence</button>
+    <span id="playStatus" class="hidden">Playing...</span>
+    <div id="playAllContainer" class="phrase hidden">
       <div class="en"></div>
       <div class="pt"></div>
     </div>
   </div>
 </body>
 
-<div class="scrambledSentenceContainer phrase">
+<div class="phrase">
   <h2>Scrambled Sentence</h2>
-  <button class="playScrambledSentence btn" onclick="playScrambledSentence()">Start Scrambled Sentence</button>
-  <div class="phrase">
+  <button class="playScrambledSentence btn" onclick="startScrambledSentence()">Start Scrambled Sentence</button>
+  <div id="scrambledSentenceContainer" class="phrase hidden">
     <div id="scrambled-result" class="hidden user-buffer">
       Correct! Move to next sentence.
     </div>
