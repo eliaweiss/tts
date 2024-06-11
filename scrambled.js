@@ -52,6 +52,8 @@ function handleClickWord(word) {
 
             // Play audio or move to next sentence logic here
             userBuffer = ""; // Reset user buffer for next sentence
+            document.getElementById("userBuffer").textContent = ""
+            document.getElementById("scrambledSentence").innerHTML = "";
             numberOfWordClicked=0
             index++
             setTimeout(playScrambledSentence,1000)
