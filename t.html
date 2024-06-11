@@ -5,11 +5,74 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Read Aloud Example</title>
+  <style>
+    .phrase {
+      margin-bottom: 20px;
+      font-size: 2rem;
+    }
+    .hidden {
+      display: none;
+    }
+  </style>
   <script>
+
+
+    function createPhrases(phrases) {
+      const container = document.createElement('div');
+      container.classList.add('phrases-container'); // Add a class for styling
+
+      phrases.forEach(phrase => {
+        const phraseDiv = document.createElement('div');
+        phraseDiv.classList.add('phrase'); // Add a class for styling
+
+        const paragraph = document.createElement('div');
+        paragraph.textContent = phrase.pt;
+
+        const buttonReadAloud = document.createElement('button');
+        buttonReadAloud.textContent = 'Ouvir (PT)'; // Portuguese for "Listen (PT)"
+        buttonReadAloud.addEventListener('click', () => readAloud(phrase.pt));
+
+        const buttonShowTranslation = document.createElement('button');
+        buttonShowTranslation.textContent = 'Tradução (EN)'; // Portuguese for "Translation (EN)"
+
+        // Create a span element to hold the English translation
+        const translationSpan = document.createElement('div');
+        translationSpan.classList.add('hidden'); // Hide the translation initially
+        translationSpan.textContent = phrase.en;
+
+        // Add click event listener to toggle the visibility of the translation
+        buttonShowTranslation.addEventListener('click', () => {
+          translationSpan.classList.toggle('hidden');  // Toggle hidden class
+        });
+
+        phraseDiv.appendChild(paragraph);
+        phraseDiv.appendChild(translationSpan);
+        phraseDiv.appendChild(buttonReadAloud);
+        phraseDiv.appendChild(buttonShowTranslation);
+        container.appendChild(phraseDiv);
+      });
+
+      document.body.appendChild(container);
+    }
+
+
+
+    // Example usage
+    const phrases = [
+      { pt: 'Olá, como você está?', en: 'Hi, how are you?' },
+      { pt: 'Bom dia, prazer em conhecê-lo.', en: 'Good morning, nice to meet you.' },
+      { pt: 'Obrigado por sua ajuda.', en: 'Thank you for your help.' },
+      { pt: 'Até logo!', en: 'See you later!' }
+    ];
+
+
+
     let voices = [];
 
     function loadVoices() {
       voices = window.speechSynthesis.getVoices();
+      // Example usage
+      createPhrases(phrases);
     }
 
     function readAloud(text) {
@@ -30,27 +93,7 @@
 </head>
 
 <body>
-  <h1>Leitura em Voz Alta</h1>
 
-  <div>
-    <p>Olá, como você está?</p>
-    <button onclick="readAloud('Olá, como você está?')">Ouvir</button>
-  </div>
-
-  <div>
-    <p>Bom dia, prazer em conhecê-lo.</p>
-    <button onclick="readAloud('Bom dia, prazer em conhecê-lo.')">Ouvir</button>
-  </div>
-
-  <div>
-    <p>Obrigado por sua ajuda.</p>
-    <button onclick="readAloud('Obrigado por sua ajuda.')">Ouvir</button>
-  </div>
-
-  <div>
-    <p>Até logo!</p>
-    <button onclick="readAloud('Até logo!')">Ouvir</button>
-  </div>
 </body>
 
 </html>
