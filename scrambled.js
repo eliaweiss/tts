@@ -42,7 +42,7 @@ async function playScrambledSentence() {
     scrambledWords.forEach(word => {
         const button = document.createElement("button");
         button.classList.add("scrambled-word");
-        button.textContent = word.toLowerCase().replace(".", "").replace("?", "").replace(/punctuation/g, "");
+        button.textContent = word.toLowerCase().replace(",", "").replace(".", "").replace("?", "").replace(/punctuation/g, "");
         button.onclick = function () {
             handleClickWord(word);
         };

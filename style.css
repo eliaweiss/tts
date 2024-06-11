@@ -84,7 +84,11 @@ body {
     color: white;
 
 }
-
+.correctResult {
+    border: 2px solid #85bbe7;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
 .hidden {
     display: none;
 }
