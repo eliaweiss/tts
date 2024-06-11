@@ -1,0 +1,80 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    /* Choose a nice, readable font */
+    margin: 2rem;
+    /* Add some margin around the content */
+    background-color: #f5f5f5;
+    /* Light gray background */
+}
+
+.phrases-container {
+    display: flex;
+    /* Arrange phrases horizontally */
+    flex-wrap: wrap;
+    /* Allow phrases to wrap to multiple lines */
+    justify-content: space-between;
+    /* Space phrases evenly */
+}
+
+.phrase {
+    margin: 1rem;
+    /* Add space between phrases */
+    border: 1px solid #ddd;
+    /* Add a subtle border */
+    border-radius: 5px;
+    /* Rounded corners for a softer look */
+    padding: 1rem;
+    /* Add some padding inside the phrase */
+    background-color: #fff;
+    /* White background for better contrast */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for depth */
+}
+
+.pt,
+.en {
+    margin-bottom: 0.5rem;
+    /* Add some space between text elements */
+}
+
+.pt {
+    font-size: 1.2rem;
+    /* Make Portuguese text slightly larger for emphasis */
+    font-weight: bold;
+    /* Bold the Portuguese text */
+}
+
+.en {
+    font-style: italic;
+    /* Italicize the English translation */
+    color: #462020;
+    /* Gray out the translation for a subtle effect */
+}
+
+.buttons button,.btn {
+    margin-right: 0.5rem;
+    /* Add some space between buttons */
+    padding: 0.5rem 1rem;
+    /* Add some padding for buttons */
+    border: none;
+    /* Remove default button border */
+    border-radius: 5px;
+    /* Rounded corners for buttons */
+    background-color: #eee;
+    /* Light gray background for buttons */
+    cursor: pointer;
+    /* Indicate clickable buttons */
+
+    background-color: #4CAF50; /* Green color for read aloud buttons */
+    color: white; /* White text for buttons */ 
+}
+
+.buttons button:hover {
+    background-color: #ddd;
+    /* Slightly darker background on hover */
+}
+
+.hidden {
+    display: none;
+}
