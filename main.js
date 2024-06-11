@@ -6,8 +6,6 @@ let voices = [];
 ///////////////////////////////////
 function loadVoices() {
     voices = window.speechSynthesis.getVoices();
-    // Example usage
-    createPhrases(phrases);
 }
 
 async function readAloud(text, lang) {
