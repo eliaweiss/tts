@@ -60,6 +60,7 @@ function deleteLastWord_helper(str) {
     }
   }
 function deleteWord() {
+    if (numberOfWordClicked<=0) return
     numberOfWordClicked--;
     userBuffer = deleteLastWord_helper(userBuffer.trim())+" ";
     document.getElementById("userBuffer").textContent = userBuffer.trim();
