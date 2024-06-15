@@ -19,13 +19,11 @@ var phrases = [
     { pt: 'Onde você estudou?', en: 'Where did you study?' },
     { pt: 'Onde está o ponto de ônibus?', en: 'Where is the bus stop?' },
     { pt: 'Onde você estava ontem?', en: 'Where were you yesterday?' },
-
     { pt: 'Meu nome é João.', en: 'My name is João.' },
     { pt: 'Eu tenho 25 anos.', en: 'I am 25 years old.' },
     { pt: 'Eu sou engenheiro.', en: 'I am an engineer.' },
     { pt: 'Meu endereço é Rua das Flores, 123.', en: 'My address is 123 Flowers Street.' },
     { pt: 'Meu número de telefone é (11) 98765-4321.', en: 'My phone number is (11) 98765-4321.' },
-    // { pt: 'Eu sou brasileiro.', en: 'I am Brazilian.' },
     { pt: 'Meu time de futebol favorito é o Flamengo.', en: 'My favorite soccer team is Flamengo.' },
     { pt: 'Hoje é 11 de junho de 2024.', en: 'Today is June 11, 2024.' },
     { pt: 'Meu filme favorito é "O Poderoso Chefão".', en: 'My favorite movie is "The Godfather".' },
@@ -40,8 +38,6 @@ var phrases = [
     { pt: 'Eu estudei na Universidade de São Paulo.', en: 'I studied at the University of São Paulo.' },
     { pt: 'O ponto de ônibus está naquela direção.', en: 'The bus stop is in that direction.' },
     { pt: 'Eu estava em casa ontem.', en: 'I was at home yesterday.' },
-
-    // { pt: 'Por favor, pode me ajudar?', en: 'Please, can you help me?' },
     { pt: 'Quanto custa isso?', en: 'How much does this cost?' },
     { pt: 'Eu não entendo.', en: 'I don\'t understand.' },
     { pt: 'Você fala inglês?', en: 'Do you speak English?' },
@@ -51,7 +47,6 @@ var phrases = [
     { pt: 'Eu gostaria de uma mesa para duas pessoas.', en: 'I would like a table for two, please.' },
     { pt: 'Qual é o horário de funcionamento?', en: 'What are the opening hours?' },
     { pt: 'Posso pagar com cartão?', en: 'Can I pay with a card?' },
-
     { pt: 'Claro, estou aqui para ajudar.', en: 'Of course, I\'m here to help.' },
     { pt: 'Isso custa R$ 20.', en: 'That costs $20.' },
     { pt: 'Posso explicar de outra forma?', en: 'Can I explain it differently?' },
@@ -62,20 +57,14 @@ var phrases = [
     { pt: 'Certamente, vou providenciar uma mesa para duas pessoas.', en: 'Certainly, I will arrange a table for two.' },
     { pt: 'Estamos abertos das 9h às 18h, de segunda a sexta-feira.', en: 'We are open from 9am to 6pm, Monday to Friday.' },
     { pt: 'Sim, aceitamos cartões de crédito e débito.', en: 'Yes, we accept credit and debit cards.' },
-
     { pt: 'um, dois, três, quatro, cinco, seis, sete, oito, nove, dez', en: "count one to ten" },
     { pt: 'onze, doze, treze, quatorze, quinze, dezesseis, dezessete, dezoito, dezenove, vinte', en: "count 11 to 20" },
     { pt: 'domingo, segunda-feira, terça-feira, quarta-feira, quinta-feira, sexta-feira, sábado', en: "days of week" },
     { pt: 'janeiro, fevereiro, março, abril, maio, junho, julho, agosto, setembro, outubro, novembro, dezembro', en: "name of months" },
-
-    // Greetings and Introductions
     { pt: "Como você se chama?", en: "What is your name?" },
     { pt: "Prazer em conhecê-lo.", en: "Nice to meet you." },
-
-    // Asking Questions
     { pt: "Posso te fazer uma pergunta?", en: "Can I ask you a question?" },
     { pt: "Desculpe, como faço para chegar ao parque?", en: "Excuse me, how do I get to the park?" },
-    // { pt: "Fala português?", en: "Do you speak Portuguese?" },
     { pt: "Quanto custa um celular?", en: "How much does a cell phone cost?" },
     { pt: "Onde posso encontrar chocolate?", en: "Where can I find chocolate?" },
     { pt: "Você sabe que horas são?", en: "Do you know what time it is?" },
@@ -83,18 +72,11 @@ var phrases = [
     { pt: "Onde fica o banheiro?", en: "Where is the bathroom?" },
     { pt: "Posso usar o seu Wi-Fi?", en: "Can I use your Wi-Fi?" },
     { pt: "Onde posso comer algo?", en: "Where can I eat something?" },
-
-
-    // Expressing Thanks and Appreciation
     { pt: "De nada.", en: "You're welcome." },
-    // { pt: "Com licença.", en: "Excuse me." },
-    // { pt: "Desculpe.", en: "Sorry." },
     { pt: "Não sei.", en: "I don't know." },
     { pt: "Posso te ajudar?", en: "Can I help you?" },
     { pt: "Fale mais devagar.", en: "Speak more slowly." },
     { pt: "Não entendi.", en: "I didn't understand." },
-
-    // Expressing Opinions and Requests
     { pt: "Acho que", en: "I think ." },
     { pt: "Eu gostaria de", en: "I would like to." },
     { pt: "Você pode me recomendar um livro?", en: "Can you recommend a book to me?" },
@@ -105,7 +87,6 @@ var phrases = [
     { pt: "Posso sentar aqui?", en: "May I sit here?" },
     { pt: "Você está ocupado?", en: "Are you busy?" },
     { pt: "Posso te fazer companhia?", en: "Can I join you?" },
-
     { pt: "Posso pegar emprestado seu carro?", en: "Can I borrow your car?" },
     { pt: "Posso usar seu telefone?", en: "Can I use your phone?" },
     { pt: "Posso abrir a janela?", en: "Can I open the window?" },
@@ -113,7 +94,6 @@ var phrases = [
     { pt: "Posso pagar com cartão?", en: "Can I pay with a card?" },
     { pt: "Posso tirar uma foto?", en: "Can I take a picture?" },
     { pt: "Posso levar isso?", en: "Can I take this?" },
-
     { pt: "Será que eu posso te ajudar?", en: "I wonder if I can help you?" },
     { pt: "Você me permite pegar emprestado seu carro?", en: "Do you allow me to borrow your car?" },
     { pt: "É possível eu entrar?", en: "Is it possible for me to come in?" },
@@ -124,7 +104,6 @@ var phrases = [
     { pt: "Tem como eu pagar com cartão?", en: "Is there a way for me to pay with a card?" },
     { pt: "Será que eu posso tirar uma foto?", en: "I wonder if I can take a picture?" },
     { pt: "Você me permite levar isso?", en: "Do you allow me to take this?" },
-
     { pt: "Você pode me ajudar?", en: "Can you help me?" },
     { pt: "Você pode falar mais devagar?", en: "Can you speak more slowly?" },
     { pt: "Você pode me dar uma carona?", en: "Can you give me a ride?" },
@@ -135,7 +114,6 @@ var phrases = [
     { pt: "Você pode me mostrar o caminho?", en: "Can you show me the way?" },
     { pt: "Você pode me enviar o documento?", en: "Can you send me the document?" },
     { pt: "Você pode repetir a pergunta?", en: "Can you repeat the question?" },
-
     { pt: "Como faço para chegar ao centro da cidade?", en: "How do I get to the city center?" },
     { pt: "Onde fica a estação de metrô mais próxima?", en: "Where is the nearest subway station?" },
     { pt: "Siga em frente e vire à esquerda.", en: "Go straight ahead and turn left." },
@@ -146,7 +124,6 @@ var phrases = [
     { pt: "A estação de trem fica à direita depois do parque.", en: "The train station is to the right after the park." },
     { pt: "Onde posso pegar um táxi?", en: "Where can I get a taxi?" },
     { pt: "O banco fica em frente à praça.", en: "The bank is in front of the square." },
-
     { pt: "Qual é o prato do dia?", en: "What is the dish of the day?" },
     { pt: "Eu gostaria de uma salada, por favor.", en: "I would like a salad, please." },
     { pt: "Você tem opções vegetarianas?", en: "Do you have vegetarian options?" },
@@ -156,9 +133,7 @@ var phrases = [
     { pt: "O que você recomenda para sobremesa?", en: "What do you recommend for dessert?" },
     { pt: "O frango grelhado vem com quais acompanhamentos?", en: "What sides come with the grilled chicken?" },
     { pt: "Eu sou alérgico a amendoim.", en: "I am allergic to peanuts." },
-    { pt: "A conta, por favor.", en: "The check, please." }
-    ,
-    // { pt: "Com licença, você pode me ajudar?", en: "Excuse me, can you help me?" },
+    { pt: "A conta, por favor.", en: "The check, please." },
     { pt: "Com licença, onde fica o banheiro?", en: "Excuse me, where is the bathroom?" },
     { pt: "Com licença, você pode repetir, por favor?", en: "Excuse me, can you repeat that, please?" },
     { pt: "Com licença, posso passar?", en: "Excuse me, can I pass through?" },
@@ -167,6 +142,5 @@ var phrases = [
     { pt: "Com licença, este lugar está ocupado?", en: "Excuse me, is this seat taken?" },
     { pt: "Com licença, você pode me dizer como chegar à estação de trem?", en: "Excuse me, can you tell me how to get to the train station?" },
     { pt: "Com licença, onde posso encontrar um caixa eletrônico?", en: "Excuse me, where can I find an ATM?" },
-    { pt: "Com licença, você pode me emprestar um lápis?", en: "Excuse me, can you lend me a pencil?" }
-,
+    { pt: "Com licença, você pode me emprestar um lápis?", en: "Excuse me, can you lend me a pencil?" },
 ];
