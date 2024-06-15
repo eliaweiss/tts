@@ -91,7 +91,7 @@ async function readAllPhrases() {
 
 
         index++;
-        // console.log('index: ' + index);
+        console.log('index: ' + index);
         if (index >= phrases.length) {
             index = 0
             phrases = randomPermutation(phrases)
