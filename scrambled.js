@@ -22,7 +22,7 @@ async function playScrambledSentence() {
     document.querySelector('#scrambled-result').classList.add('hidden');  // Toggle hidden class
     document.querySelector('#scrambled-game').classList.remove('hidden');  // Toggle hidden class
     document.getElementById('scrambled-en').textContent= phrases[index].en
-    
+    console.log("index "+index+" phrase "+phrases[index].en);
     await playSentence();
 
     // Get the current Portuguese sentence
@@ -75,7 +75,7 @@ async function handleClickWord(word) {
     if (numberOfWordClicked == words.length) {
         // Check if user buffer matches the original sentence (excluding punctuation)
         if (userBuffer.trim().replace(/punctuation/g, "") === currentSentencePt) {
-            console.log("Correct! Move to next sentence.");
+            // console.log("Correct! Move to next sentence.");
             document.querySelector('#scrambled-game').classList.add('hidden');  // Toggle hidden class
             document.querySelector('#scrambled-result').classList.remove('hidden');  // Toggle hidden class
             // Play audio or move to next sentence logic here

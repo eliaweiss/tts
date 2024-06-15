@@ -23,7 +23,7 @@ async function readAloud(text, lang) {
         }
 
         utterance.onend = function(event) {
-            console.log('Speech synthesis finished.');
+            // console.log('Speech synthesis finished.');
             resolve(); // Resolve the promise when speech synthesis is finished
         };
 

@@ -41,7 +41,7 @@ var phrases = [
     { pt: 'O ponto de ônibus está naquela direção.', en: 'The bus stop is in that direction.' },
     { pt: 'Eu estava em casa ontem.', en: 'I was at home yesterday.' },
 
-    { pt: 'Por favor, pode me ajudar?', en: 'Please, can you help me?' },
+    // { pt: 'Por favor, pode me ajudar?', en: 'Please, can you help me?' },
     { pt: 'Quanto custa isso?', en: 'How much does this cost?' },
     { pt: 'Eu não entendo.', en: 'I don\'t understand.' },
     { pt: 'Você fala inglês?', en: 'Do you speak English?' },
@@ -158,7 +158,7 @@ var phrases = [
     { pt: "Eu sou alérgico a amendoim.", en: "I am allergic to peanuts." },
     { pt: "A conta, por favor.", en: "The check, please." }
     ,
-    { pt: "Com licença, você pode me ajudar?", en: "Excuse me, can you help me?" },
+    // { pt: "Com licença, você pode me ajudar?", en: "Excuse me, can you help me?" },
     { pt: "Com licença, onde fica o banheiro?", en: "Excuse me, where is the bathroom?" },
     { pt: "Com licença, você pode repetir, por favor?", en: "Excuse me, can you repeat that, please?" },
     { pt: "Com licença, posso passar?", en: "Excuse me, can I pass through?" },
