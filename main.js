@@ -66,7 +66,7 @@ async function readAllPhrases() {
     document.querySelector('#playStatus').classList.remove('hidden');  // Toggle hidden class
 
     while (isReading) {
-        console.log('index: ' + index+' '+phrases[index].en);
+        console.log('index: ' + index+'/'+phrases.length+' - '+phrases[index].en);
 
         // Update current phrase display
         document.querySelector('#playAllContainer .pt').textContent = phrases[index].pt;
