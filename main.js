@@ -22,12 +22,12 @@ async function readAloud(text, lang) {
             utterance.voice = selectedVoice;
         }
 
-        utterance.onend = function(event) {
+        utterance.onend = function (event) {
             // console.log('Speech synthesis finished.');
             resolve(); // Resolve the promise when speech synthesis is finished
         };
 
-        utterance.onerror = function(event) {
+        utterance.onerror = function (event) {
             reject(event.error); // Reject the promise if there's an error during speech synthesis
         };
 
@@ -47,7 +47,7 @@ async function readAloud_en(text) {
 
 ///////////////////////////////////
 // Global variable
-let isReading = false; 
+let isReading = false;
 let isPlaying = false
 waitTime = 4000
 index = 0
@@ -90,8 +90,8 @@ async function readAllPhrases() {
         if (!isReading) break
 
 
+        console.log('index: ' + index+' '+phrases[index].en);
         index++;
-        console.log('index: ' + index);
         if (index >= phrases.length) {
             index = 0
             phrases = randomPermutation(phrases)
@@ -99,7 +99,7 @@ async function readAllPhrases() {
     }
 
     isPlaying = false; // Set to false after reading all phrases
-    
+
 }
 ///////////////////////////////////
 
@@ -119,12 +119,12 @@ async function waitForSeconds(ss) {
 
 
 ///////////////////////////////////
-
+// Fisher-Yates (or Knuth) shuffle algorithm
 function randomPermutation(data) {
-    const perm = data.slice();
-  
-    // Randomly shuffle the elements of the list
-    perm.sort(() => Math.random() - 0.5);
-  
+    const perm = data.slice(); // Create a copy of the data array
+    for (let i = perm.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1)); // Random index from 0 to i
+        [perm[i], perm[j]] = [perm[j], perm[i]]; // Swap elements at i and j
+    }
     return perm;
-  }
+}
