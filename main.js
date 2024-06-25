@@ -9,6 +9,12 @@ window.speechSynthesis.onvoiceschanged = loadVoices;
 ///////////////////////////////////
 
 async function readAloud(text, lang) {
+  const groups = text.split(/[,.?]/);
+  for (sentence of groups) {
+    await readAloud_helper(sentence, lang);
+  }
+}
+async function readAloud_helper(text, lang) {
   return new Promise((resolve, reject) => {
     // console.log(">>");
     try {
@@ -44,6 +50,34 @@ async function readAloud(text, lang) {
   });
 }
 
+function splitIntoGroups(words, maxGroupSize = 5) {
+  let groups = [];
+  for (let i = 0; i < words.length; i += maxGroupSize) {
+    groups.push(words.slice(i, i + maxGroupSize));
+  }
+  return groups;
+}
+
+///////////////////////////////////
+async function readAloud_split_pt(text) {
+  const groups = text.split(/[,.?]/);
+  for (words of groups) {
+    await readAloud_helper(addCommas(text), "pt-BR");
+  }
+  //   const wordList = text.split(/\s+/);
+  //   const groups = splitIntoGroups(wordList);
+  //   for (const words of groups) {
+  //     const commaSeparatedString = words.join(", ");
+  //     await readAloud_pt(commaSeparatedString);
+  //   }
+  //   if (text.length > 100) {
+  //     for (const word of words) {
+  //       await readAloud(word, "pt-BR");
+  //     }
+  //   } else {
+  //     await readAloud_pt(addCommas(phrases[index].pt));
+  //   }
+}
 ///////////////////////////////////
 async function readAloud_pt(text) {
   await readAloud(text, "pt-BR");
@@ -82,24 +116,24 @@ async function readAllPhrases() {
     document.querySelector("#playAllContainer .pt").textContent =
       phrases[index].pt;
     document.querySelector("#playAllContainer .en").textContent =
-      phrases[index].en;
+      index + "/" + phrases.length + " - " + phrases[index].en;
 
     if (phrases[index].en) {
       await readAloud_en(phrases[index].en);
-      await waitForSeconds(1);
+      //   await waitForSeconds(0.5);
     }
     if (!isReading) break;
     await readAloud_pt(phrases[index].pt);
     if (!isReading) break;
-    await waitForSeconds(1);
+    await waitForSeconds(2);
     if (!isReading) break;
-    await readAloud_pt(addCommas(phrases[index].pt));
+    await readAloud_split_pt(phrases[index].pt);
     if (!isReading) break;
-    await waitForSeconds(1);
+    await waitForSeconds(2);
     if (!isReading) break;
     await readAloud_pt(phrases[index].pt);
     if (!isReading) break;
-    await waitForSeconds(2);
+    await waitForSeconds(3);
     if (!isReading) break;
 
     index++;
