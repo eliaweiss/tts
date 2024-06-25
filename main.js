@@ -61,8 +61,8 @@ function splitIntoGroups(words, maxGroupSize = 5) {
 ///////////////////////////////////
 async function readAloud_split_pt(text) {
   const groups = text.split(/[,.?]/);
-  for (words of groups) {
-    await readAloud_helper(addCommas(text), "pt-BR");
+  for (sentence of groups) {
+    await readAloud_helper(addCommas(sentence), "pt-BR");
   }
   //   const wordList = text.split(/\s+/);
   //   const groups = splitIntoGroups(wordList);
