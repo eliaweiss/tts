@@ -152,8 +152,6 @@ var phrases = [
   { pt: "Posso te ajudar?", en: "Can I help you?" },
   { pt: "Fale mais devagar.", en: "Speak more slowly." },
   { pt: "Não entendi.", en: "I didn't understand." },
-  { pt: "Acho que", en: "I think ." },
-  { pt: "Eu gostaria de", en: "I would like to." },
   {
     pt: "Você pode me recomendar um livro?",
     en: "Can you recommend a book to me?",
