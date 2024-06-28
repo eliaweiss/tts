@@ -1357,7 +1357,7 @@ var phrases = [
     en: "You can buy a public transport card at any subway station or at authorized sales points.",
   },
   {
-    pt: "O teste de COVID-19 pode ser feito no hospital central ou em clínicas privadas que oferecem o serviço por uma taxa.",
+    pt: "O teste de COVID-19 pode ser feito no hospital central ou em clínicas privadas, que oferecem o serviço por uma taxa.",
     en: "COVID-19 testing can be done at the central hospital or at private clinics that offer the service for a fee.",
   },
   {
