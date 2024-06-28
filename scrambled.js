@@ -33,7 +33,9 @@ async function playScrambledSentence() {
   words = currentSentencePt.split(" "); // Split into words
 
   // Randomly scramble the words
-  const scrambledWords = removeDuplicates(randomPermutation(words));
+  const scrambledWords = removeDuplicates(
+    randomPermutation(words)
+  ).toLocaleLowerCase();
 
   // Clear user buffer and display area
   userBuffer = "";
@@ -46,7 +48,6 @@ async function playScrambledSentence() {
     const button = document.createElement("button");
     button.classList.add("scrambled-word");
     button.textContent = word
-      .toLowerCase()
       .replace(",", "")
       .replace(".", "")
       .replace("?", "")
