@@ -33,7 +33,7 @@ async function playScrambledSentence() {
   words = currentSentencePt.split(" "); // Split into words
 
   // Randomly scramble the words
-  const scrambledWords = randomPermutation(words);
+  const scrambledWords = removeDuplicates(randomPermutation(words));
 
   // Clear user buffer and display area
   userBuffer = "";
@@ -58,6 +58,13 @@ async function playScrambledSentence() {
   });
 }
 
+function removeDuplicates(words) {
+  // Use a Set to automatically handle duplicates
+  let uniqueWords = new Set(words);
+
+  // Convert the Set back to an array
+  return Array.from(uniqueWords);
+}
 function deleteLastWord_helper(str) {
   const lastSpaceIndex = str.lastIndexOf(" ");
   if (lastSpaceIndex !== -1) {
