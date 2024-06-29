@@ -29,13 +29,16 @@ async function playScrambledSentence() {
   await playSentence();
 
   // Get the current Portuguese sentence
-  currentSentencePt = phrases[index].pt.replace(/punctuation/g, ""); // Remove punctuation
-  words = currentSentencePt.split(" "); // Split into words
+  currentSentencePt = phrases[index].pt; //.replace(/punctuation/g, ""); // Remove punctuation
+  currentSentencePt = currentSentencePt
+    .replace(", ", " ")
+    .replace(". ", " ")
+    .replace("?", "")
+    .replace(/punctuation/g, "");
+  words = currentSentencePt.toLocaleLowerCase().split(" "); // Split into words
 
   // Randomly scramble the words
-  const scrambledWords = removeDuplicates(
-    randomPermutation(words)
-  ).toLocaleLowerCase();
+  const scrambledWords = removeDuplicates(randomPermutation(words));
 
   // Clear user buffer and display area
   userBuffer = "";
@@ -47,11 +50,8 @@ async function playScrambledSentence() {
   scrambledWords.forEach((word) => {
     const button = document.createElement("button");
     button.classList.add("scrambled-word");
-    button.textContent = word
-      .replace(",", "")
-      .replace(".", "")
-      .replace("?", "")
-      .replace(/punctuation/g, "");
+    button.textContent = word;
+
     button.onclick = function () {
       handleClickWord(word);
     };

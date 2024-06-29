@@ -60,7 +60,7 @@ function splitIntoGroups(words, maxGroupSize = 5) {
 
 ///////////////////////////////////
 async function readAloud_split_pt(text) {
-  const groups = text.split(/[,.?]/);
+  const groups = text.split(/[,.?] /);
   for (sentence of groups) {
     await readAloud_helper(addCommas(sentence), "pt-BR");
   }
