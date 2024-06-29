@@ -16,6 +16,14 @@ async function startScrambledSentence() {
   index++;
   playScrambledSentence();
 }
+
+function removeDotAtEnd(sentence) {
+  if (sentence.endsWith(".")) {
+    return sentence.slice(0, -1); // Remove the last character
+  }
+  return sentence;
+}
+
 async function playScrambledSentence() {
   if (index >= phrases.length) {
     index = 0;
@@ -30,7 +38,7 @@ async function playScrambledSentence() {
 
   // Get the current Portuguese sentence
   currentSentencePt = phrases[index].pt; //.replace(/punctuation/g, ""); // Remove punctuation
-  currentSentencePt = currentSentencePt
+  currentSentencePt = removeDotAtEnd(currentSentencePt)
     .replace(", ", " ")
     .replace(". ", " ")
     .replace("?", "")
@@ -81,6 +89,22 @@ function deleteWord() {
   userBuffer = deleteLastWord_helper(userBuffer.trim()) + " ";
   document.getElementById("userBuffer").textContent = userBuffer.trim();
 }
+
+///////////////////////////////////
+
+async function rePlaySentence() {
+  const lang = "pt-BR";
+  const text = phrases[index].pt.toLocaleLowerCase();
+  const subSentenceList = splitIntoSubSentences(text);
+  for (subSentence of subSentenceList) {
+    await readAloud_helper(subSentence, lang);
+    if (!getCurrentUserBuffer().includes(subSentence)) {
+      break;
+    }
+  }
+}
+///////////////////////////////////
+
 async function handleClickWord(word) {
   numberOfWordClicked++;
   userBuffer += word + " ";
@@ -90,12 +114,7 @@ async function handleClickWord(word) {
 
   if (numberOfWordClicked == words.length) {
     // Check if user buffer matches the original sentence (excluding punctuation)
-    if (
-      userBuffer
-        .trim()
-        .replace(/punctuation/g, "")
-        .toLocaleLowerCase() === currentSentencePt.toLocaleLowerCase()
-    ) {
+    if (getCurrentUserBuffer() === currentSentencePt.toLocaleLowerCase()) {
       // console.log("Correct! Move to next sentence.");
       document.querySelector("#scrambled-result").classList.remove("hidden"); // Toggle hidden class
 
@@ -109,6 +128,13 @@ async function handleClickWord(word) {
       setTimeout(playScrambledSentence, 1000);
     }
   }
+}
+
+function getCurrentUserBuffer() {
+  return userBuffer
+    .trim()
+    .replace(/punctuation/g, "")
+    .toLocaleLowerCase();
 }
 
 function moveToNextSentence() {
