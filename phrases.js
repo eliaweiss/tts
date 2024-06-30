@@ -77,6 +77,11 @@ var phrases = [
   { pt: "Eu preciso de um médico.", en: "I need a doctor." },
   { pt: "Onde fica o hotel?", en: "Where is the hotel?" },
   { pt: "Pode repetir, por favor?", en: "Can you repeat, please?" },
+  { pt: "A escola fica perto daqui", en: "The school is near here" },
+  { pt: "Ele vai ficar em casa hoje", en: "He will stay at home today" },
+  { pt: "Fique aqui enquanto eu saio", en: "Stay here while I go outy" },
+  { pt: "Ele ficou triste com a notícia", en: "He became sad with the news" },
+  { pt: "O tempo ficou quente", en: "The weather became hot" },
   {
     pt: "Eu gostaria de uma mesa para duas pessoas.",
     en: "I would like a table for two, please.",
