@@ -79,7 +79,7 @@ var phrases = [
   { pt: "Pode repetir, por favor?", en: "Can you repeat, please?" },
   { pt: "A escola fica perto daqui", en: "The school is near here" },
   { pt: "Ele vai ficar em casa hoje", en: "He will stay at home today" },
-  { pt: "Fique aqui enquanto eu saio", en: "Stay here while I go outy" },
+  { pt: "Fique aqui enquanto eu saio", en: "Stay here while I go out" },
   { pt: "Ele ficou triste com a notícia", en: "He became sad with the news" },
   { pt: "O tempo ficou quente", en: "The weather became hot" },
   {
@@ -1358,7 +1358,7 @@ var phrases = [
     en: "A quiet place to study is the municipal library, which has several quiet study rooms.",
   },
   {
-    pt: "Você pode comprar um cartão de transporte público em qualquer estação de metrô ou em pontos de venda autorizados.",
+    pt: "Você pode comprar um cartão de transporte público em qualquer estação de metrô, ou em pontos de venda autorizados.",
     en: "You can buy a public transport card at any subway station or at authorized sales points.",
   },
   {
