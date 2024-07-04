@@ -1905,4 +1905,32 @@ var phrases = [
     pt: "Ela está aprendendo a fazer cerâmica.",
     en: "She is learning to make pottery.",
   },
+  {
+    pt: "Pode escolher qualquer livro",
+    en: "You can choose any book",
+  },
+  {
+    pt: "Qualquer pessoa pode fazer isso",
+    en: "Any person can do this",
+  },
+  {
+    pt: "Ele é um qualquer",
+    en: "He is a nobody",
+  },
+  {
+    pt: "Eu aceito qualquer ajuda.",
+    en: "I accept any help",
+  },
+  {
+    pt: "Tenho alguma dúvida",
+    en: "I have some doubt",
+  },
+  {
+    pt: "Não tenho alguma dúvida",
+    en: "I don't have any doubt",
+  },
+  {
+    pt: "Eu preciso de alguma ajuda",
+    en: "I need some help",
+  },
 ];
