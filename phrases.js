@@ -1933,4 +1933,40 @@ var phrases = [
     pt: "Eu preciso de alguma ajuda",
     en: "I need some help",
   },
+  {
+    pt: "O início das aulas será na próxima semana",
+    en: "The start of classes will be next week",
+  },
+  {
+    pt: "Desde o início do projeto, tivemos muitos desafios",
+    en: "Since the beginning of the project, we have had many challenges",
+  },
+  {
+    pt: "No começo, eu não entendia nada",
+    en: "At the beginning, I didn’t understand anything",
+  },
+  {
+    pt: "Vamos marcar o começo da reunião para as nove",
+    en: "Let's schedule the start of the meeting for nine o'clock",
+  },
+  {
+    pt: "Vamos marcar o começo da reunião para as nove",
+    en: "Let's schedule the start of the meeting for nine o'clock",
+  },
+  {
+    pt: "O início das atividades está previsto para setembro",
+    en: "The beginning of activities is scheduled for September",
+  },
+  {
+    pt: "No começo do ano, sempre faço resoluções",
+    en: "At the beginning of the year, I always make resolutions",
+  },
+  {
+    pt: "início de carreira",
+    en: "career start",
+  },
+  {
+    pt: "começo de conversa",
+    en: "beginning of a conversation",
+  },
 ];
