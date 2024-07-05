@@ -1474,7 +1474,7 @@ var phrases = [
     en: "The 'Creative Hands' craft store has a wide range of products made by local artisans.",
   },
   {
-    pt: "Você podecomprar uma bicicleta nova na loja 'Pedal Seguro', que oferece uma variedade de modelos e acessórios.",
+    pt: "Você pode comprar uma bicicleta nova na loja 'Pedal Seguro', que oferece uma variedade de modelos e acessórios.",
     en: "You can buy a new bike at 'Safe Pedal' store, which offers a variety of models and accessories.",
   },
   {
