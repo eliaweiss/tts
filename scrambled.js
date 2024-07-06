@@ -108,7 +108,7 @@ async function rePlaySentence() {
 async function handleClickWord(word) {
   numberOfWordClicked++;
   userBuffer += word + " ";
-  await readAloud_pt(word);
+  await readAloud_pt(word, 1.25);
 
   document.getElementById("userBuffer").textContent = userBuffer.trim();
 

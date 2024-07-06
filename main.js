@@ -20,18 +20,19 @@ async function readAloud_slow_pt(text) {
 }
 ///////////////////////////////////
 
-async function readAloud(text, lang) {
+async function readAloud(text, lang, rate = 1) {
   const groups = splitIntoSubSentences(text);
   for (sentence of groups) {
-    await readAloud_helper(sentence, lang);
+    await readAloud_helper(sentence, lang, rate);
   }
 }
 
-async function readAloud_helper(text, lang) {
+async function readAloud_helper(text, lang, rate = 1) {
   return new Promise((resolve, reject) => {
     // console.log(">>");
     try {
       const utterance = new SpeechSynthesisUtterance(text);
+      utterance.rate = rate;
       utterance.lang = lang;
 
       // Select a specific voice for Brazilian Portuguese if available
@@ -64,8 +65,8 @@ async function readAloud_helper(text, lang) {
 }
 
 ///////////////////////////////////
-async function readAloud_pt(text) {
-  await readAloud(text, "pt-BR");
+async function readAloud_pt(text, rate = 1) {
+  await readAloud(text, "pt-BR", rate);
 }
 ///////////////////////////////////
 async function readAloud_en(text) {
