@@ -114,9 +114,9 @@ async function readAllPhrases() {
     if (!isReading) break;
     await readAloud_slow_pt(phrases[index].pt);
     if (!isReading) break;
-    await waitForSeconds(2);
-    if (!isReading) break;
-    await readAloud_pt(phrases[index].pt);
+    // await waitForSeconds(2);
+    // if (!isReading) break;
+    // await readAloud_pt(phrases[index].pt);
     if (!isReading) break;
     await waitForSeconds(3);
     if (!isReading) break;
