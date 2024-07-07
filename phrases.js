@@ -123,19 +123,19 @@ var phrases = [
     en: "Yes, we accept credit and debit cards.",
   },
   {
-    pt: "um, dois, três, quatro, cinco, seis, sete, oito, nove, dez",
+    pt: "um dois três quatro cinco seis sete oito nove dez",
     en: "count 1 to 10",
   },
   {
-    pt: "onze, doze, treze, quatorze, quinze, dezesseis, dezessete, dezoito, dezenove, vinte",
+    pt: "onze doze treze quatorze quinze dezesseis dezessete dezoito dezenove vinte",
     en: "count 11 to 20",
   },
   {
-    pt: "domingo, segunda-feira, terça-feira, quarta-feira, quinta-feira, sexta-feira, sábado",
+    pt: "domingo segunda-feira terça-feira quarta-feira quinta-feira sexta-feira sábado",
     en: "days of week",
   },
   {
-    pt: "janeiro, fevereiro, março, abril, maio, junho, julho, agosto, setembro, outubro, novembro, dezembro",
+    pt: "janeiro fevereiro março abril maio junho julho agosto setembro outubro novembro dezembro",
     en: "name of months",
   },
   { pt: "Como você se chama?", en: "What is your name?" },
@@ -183,7 +183,7 @@ var phrases = [
     en: "Do you allow me to borrow your car?",
   },
   {
-    pt: "dez, vinte, trinta, quarenta, cinquenta, sessenta, setenta, oitenta, noventa, cem",
+    pt: "dez vinte trinta quarenta cinquenta sessenta setenta oitenta noventa cem",
     en: "count 10 to 100",
   },
 
