@@ -69,8 +69,8 @@ async function readAloud_pt(text, rate = 1) {
   await readAloud(text, "pt-BR", rate);
 }
 ///////////////////////////////////
-async function readAloud_en(text) {
-  await readAloud(text, "en-US");
+async function readAloud_en(text, rate = 1.2) {
+  await readAloud(text, "en-US", rate);
 }
 
 ///////////////////////////////////

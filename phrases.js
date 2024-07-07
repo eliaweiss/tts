@@ -184,7 +184,7 @@ var phrases = [
   },
   {
     pt: "dez, vinte, trinta, quarenta, cinquenta, sessenta, setenta, oitenta, noventa, cem",
-    en: "count 10 , 100",
+    en: "count 10 to 100",
   },
 
   { pt: "É possível eu entrar?", en: "Is it possible for me to come in?" },
