@@ -1969,4 +1969,28 @@ var phrases = [
     pt: "começo de conversa",
     en: "beginning of a conversation",
   },
+  {
+    pt: "Ontem foi um dia muito quente.",
+    en: "Yesterday was a very hot day.",
+  },
+  {
+    pt: "Ele era um homem muito inteligente.",
+    en: "He was a very intelligent man.",
+  },
+  {
+    pt: "Eu fui à festa, mas não me diverti muito.",
+    en: "I went to the party, but I didn't have much fun.",
+  },
+  {
+    pt: "Ela era uma professora muito dedicada.",
+    en: "She was a very dedicated teacher.",
+  },
+  {
+    pt: "Nós fomos ao parque e brincamos o dia todo.",
+    en: "We went to the park and played all day.",
+  },
+  {
+    pt: "Eles eram amigos de infância.",
+    en: "They were childhood friends.",
+  },
 ];
