@@ -1250,7 +1250,7 @@ var phrases = [
     en: "Yes, we have a universal phone charger that you can use while you are here.",
   },
   {
-    pt: "A farmácia aberta mais próxima fica a 24 horas e está localizada a apenas 5 minutos daqui de carro.",
+    pt: "A farmácia aberta mais próxima fica a 24 horas, e está localizada a apenas 5 minutos daqui de carro.",
     en: "The nearest 24-hour open pharmacy is located just 5 minutes away by car.",
   },
   {
