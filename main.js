@@ -21,10 +21,12 @@ async function readAloud_slow_pt(text) {
 ///////////////////////////////////
 
 async function readAloud(text, lang, rate = 1) {
-  const groups = splitIntoSubSentences(text);
-  for (sentence of groups) {
-    await readAloud_helper(sentence, lang, rate);
-  }
+  await readAloud_helper(text, lang, rate);
+
+  // const groups = splitIntoSubSentences(text);
+  // for (sentence of groups) {
+  //   await readAloud_helper(sentence, lang, rate);
+  // }
 }
 
 async function readAloud_helper(text, lang, rate = 1) {
@@ -37,7 +39,7 @@ async function readAloud_helper(text, lang, rate = 1) {
 
       // Select a specific voice for Brazilian Portuguese if available
       const selectedVoice = voices.find(
-        (voice) => voice.lang === lang && voice.name.includes("Google")
+        (voice) => voice.lang === lang //&& voice.name.includes("Google")
       );
       if (selectedVoice) {
         utterance.voice = selectedVoice;
@@ -102,24 +104,27 @@ async function readAllPhrases() {
     document.querySelector("#playAllContainer .pt").textContent =
       phrases[index].pt;
     document.querySelector("#playAllContainer .en").textContent =
-      index + "/" + phrases.length + " - " + phrases[index].en;
+      index + "/" + phrases.length + " - "; //+ phrases[index].en;
 
-    if (phrases[index].en) {
-      await readAloud_en(phrases[index].en);
-      //   await waitForSeconds(0.5);
-    }
-    if (!isReading) break;
     await readAloud_pt(phrases[index].pt);
     if (!isReading) break;
     await waitForSeconds(2);
     if (!isReading) break;
-    await readAloud_slow_pt(phrases[index].pt);
-    if (!isReading) break;
+    // await readAloud_slow_pt(phrases[index].pt);
+    // if (!isReading) break;
     // await waitForSeconds(2);
     // if (!isReading) break;
     // await readAloud_pt(phrases[index].pt);
     if (!isReading) break;
-    await waitForSeconds(3);
+    await waitForSeconds(1);
+    if (!isReading) break;
+
+    document.querySelector("#playAllContainer .en").textContent =
+      index + "/" + phrases.length + " - " + phrases[index].en;
+    if (phrases[index].en) {
+      await readAloud_en(phrases[index].en);
+      await waitForSeconds(1);
+    }
     if (!isReading) break;
 
     index++;

@@ -1993,4 +1993,84 @@ var phrases = [
     pt: "Eles eram amigos de infância.",
     en: "They were childhood friends.",
   },
+  {
+    pt: "Se você estudar todos os dias, então você aprenderá português rapidamente.",
+    en: "If you study every day, then you will learn Portuguese quickly.",
+  },
+  {
+    pt: "Se chover amanhã, então nós não iremos ao parque.",
+    en: "If it rains tomorrow, then we will not go to the park.",
+  },
+  {
+    pt: "Se você economizar dinheiro, então poderá comprar um carro novo.",
+    en: "If you save money, then you can buy a new car.",
+  },
+  {
+    pt: "Se ela praticar esportes, então ela ficará mais saudável.",
+    en: "If she practices sports, then she will become healthier.",
+  },
+  {
+    pt: "Se eu cozinhar hoje, então você lava a louça.",
+    en: "If I cook today, then you wash the dishes.",
+  },
+  {
+    pt: "Se ele chegar cedo, então nós podemos sair para jantar.",
+    en: "If he arrives early, then we can go out for dinner.",
+  },
+  {
+    pt: "Se você ler este livro, então entenderá melhor a história.",
+    en: "If you read this book, then you will understand the story better.",
+  },
+  {
+    pt: "Se eles ganharem o jogo, então estarão na final.",
+    en: "If they win the game, then they will be in the final.",
+  },
+  {
+    pt: "Se nós trabalharmos juntos, então terminaremos o projeto mais rápido.",
+    en: "If we work together, then we will finish the project faster.",
+  },
+  {
+    pt: "Se você beber muita água, então você se sentirá mais hidratado.",
+    en: "If you drink a lot of water, then you will feel more hydrated.",
+  },
+  {
+    pt: "Se você for ao supermercado, então compre leite, por favor.",
+    en: "If you go to the supermarket, then buy milk, please.",
+  },
+  {
+    pt: "Se eles estudarem para o exame, então passarão com boas notas.",
+    en: "If they study for the exam, then they will pass with good grades.",
+  },
+  {
+    pt: "Se o filme for bom, então vamos recomendá-lo aos amigos.",
+    en: "If the movie is good, then we will recommend it to friends.",
+  },
+  {
+    pt: "Se eu me exercitar regularmente, então perderei peso.",
+    en: "If I exercise regularly, then I will lose weight.",
+  },
+  {
+    pt: "Se você precisar de ajuda, então me ligue a qualquer hora.",
+    en: "If you need help, then call me anytime.",
+  },
+  {
+    pt: "Se eles construírem a ponte, então a viagem será mais curta.",
+    en: "If they build the bridge, then the journey will be shorter.",
+  },
+  {
+    pt: "Se a internet estiver funcionando, então poderemos assistir ao filme online.",
+    en: "If the internet is working, then we can watch the movie online.",
+  },
+  {
+    pt: "Se eu ganhar na loteria, então viajarei pelo mundo.",
+    en: "If I win the lottery, then I will travel around the world.",
+  },
+  {
+    pt: "Se nós plantarmos mais árvores, então o ar será mais limpo.",
+    en: "If we plant more trees, then the air will be cleaner.",
+  },
+  {
+    pt: "Se você se levantar cedo, então terá mais tempo para estudar.",
+    en: "If you get up early, then you will have more time to study.",
+  },
 ];
