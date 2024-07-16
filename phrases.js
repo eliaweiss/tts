@@ -2077,4 +2077,444 @@ var phrases = [
     pt: "noventa e oito mil, setecentos e sessenta e cinco",
     en: "98765",
   },
+  {
+    pt: "Eu fui ao mercado ontem.",
+    en: "I went to the market yesterday.",
+  },
+  {
+    pt: "Ela estudou a noite toda para o exame.",
+    en: "She studied all night for the exam.",
+  },
+  {
+    pt: "Nós viajamos para o Brasil no ano passado.",
+    en: "We traveled to Brazil last year.",
+  },
+  {
+    pt: "Eles jogaram futebol no parque.",
+    en: "They played soccer in the park.",
+  },
+  {
+    pt: "Ele comeu todo o bolo sozinho.",
+    en: "He ate the whole cake by himself.",
+  },
+  {
+    pt: "Ontem, eu encontrei um amigo antigo na rua.",
+    en: "Yesterday, I met an old friend on the street.",
+  },
+  {
+    pt: "Ela cantou no coral da escola.",
+    en: "She sang in the school choir.",
+  },
+  {
+    pt: "Nós assistimos a um filme no cinema.",
+    en: "We watched a movie at the cinema.",
+  },
+  {
+    pt: "Eu perdi meu celular na semana passada.",
+    en: "I lost my cell phone last week.",
+  },
+  {
+    pt: "Ele escreveu uma carta para os pais.",
+    en: "He wrote a letter to his parents.",
+  },
+  {
+    pt: "Eu estava aprendendo a tocar violão.",
+    en: "I was learning to play the guitar.",
+  },
+  {
+    pt: "Ele estava pintando um quadro na sala.",
+    en: "He was painting a picture in the living room.",
+  },
+  {
+    pt: "Nós estávamos construindo um novo site.",
+    en: "We were building a new website.",
+  },
+  {
+    pt: "Ela estava fazendo um bolo de chocolate.",
+    en: "She was making a chocolate cake.",
+  },
+  {
+    pt: "Eles estavam discutindo o projeto no escritório.",
+    en: "They were discussing the project in the office.",
+  },
+  {
+    pt: "O cachorro estava correndo no quintal.",
+    en: "The dog was running in the yard.",
+  },
+  {
+    pt: "Nós estávamos planejando nossas férias.",
+    en: "We were planning our vacation.",
+  },
+  {
+    pt: "Ela estava desenhando um retrato do irmão.",
+    en: "She was drawing a portrait of her brother.",
+  },
+  {
+    pt: "Eu estava organizando meus documentos.",
+    en: "I was organizing my documents.",
+  },
+  {
+    pt: "O gato estava dormindo no sofá.",
+    en: "The cat was sleeping on the couch.",
+  },
+  {
+    pt: "Em 1500, o navegador português Pedro Álvares Cabral chegou ao que hoje conhecemos como o Brasil, marcando o início da colonização portuguesa.",
+    en: "In 1500, the Portuguese navigator Pedro Álvares Cabral arrived at what we now know as Brazil, marking the beginning of Portuguese colonization.",
+  },
+  {
+    pt: "A cidade de Salvador foi fundada em 1549 e tornou-se a primeira capital do Brasil, servindo como o centro administrativo da colônia por muitos anos.",
+    en: "The city of Salvador was founded in 1549 and became the first capital of Brazil, serving as the administrative center of the colony for many years.",
+  },
+  {
+    pt: "Durante o século XVII, a descoberta de ouro em Minas Gerais atraiu muitos colonos e levou ao desenvolvimento econômico significativo da região.",
+    en: "During the 17th century, the discovery of gold in Minas Gerais attracted many settlers and led to significant economic development in the region.",
+  },
+  {
+    pt: "Em 1822, Dom Pedro I proclamou a independência do Brasil em relação a Portugal, tornando-se o primeiro imperador do país.",
+    en: "In 1822, Dom Pedro I proclaimed Brazil's independence from Portugal, becoming the country's first emperor.",
+  },
+  {
+    pt: "A abolição da escravatura no Brasil foi oficialmente decretada pela Lei Áurea em 1888, assinada pela Princesa Isabel, encerrando séculos de exploração escravista.",
+    en: "The abolition of slavery in Brazil was officially decreed by the Lei Áurea in 1888, signed by Princess Isabel, ending centuries of enslavement.",
+  },
+  {
+    pt: "O Brasil se tornou uma república em 1889, quando um golpe militar destituiu o imperador Dom Pedro II e estabeleceu um governo provisório.",
+    en: "Brazil became a republic in 1889 when a military coup deposed Emperor Dom Pedro II and established a provisional government.",
+  },
+  {
+    pt: "Durante a década de 1930, Getúlio Vargas assumiu a presidência e instituiu o Estado Novo, um regime autoritário que durou até 1945.",
+    en: "During the 1930s, Getúlio Vargas took the presidency and instituted the Estado Novo, an authoritarian regime that lasted until 1945.",
+  },
+  {
+    pt: "Em 1964, um golpe militar levou à instalação de um regime ditatorial que governou o Brasil até 1985, período marcado por repressão política e censura.",
+    en: "In 1964, a military coup led to the installation of a dictatorial regime that governed Brazil until 1985, a period marked by political repression and censorship.",
+  },
+  {
+    pt: "A Constituição de 1988, conhecida como a Constituição Cidadã, marcou o retorno à democracia e estabeleceu uma série de direitos civis e sociais para os brasileiros.",
+    en: "The 1988 Constitution, known as the Citizen Constitution, marked the return to democracy and established a series of civil and social rights for Brazilians.",
+  },
+  {
+    pt: "Em 2016, a presidente Dilma Rousseff foi afastada do cargo após um processo de impeachment, resultando em uma mudança significativa no cenário político do país.",
+    en: "In 2016, President Dilma Rousseff was removed from office after an impeachment process, resulting in a significant change in the country's political landscape.",
+  },
+  {
+    pt: "No verão passado, nós passamos uma semana inteira na praia de Copacabana, aproveitando o sol e o mar.",
+    en: "Last summer, we spent an entire week at Copacabana Beach, enjoying the sun and the sea.",
+  },
+  {
+    pt: "Ontem, nós levamos um piquenique para a praia e passamos o dia inteiro relaxando na areia.",
+    en: "Yesterday, we took a picnic to the beach and spent the whole day relaxing on the sand.",
+  },
+  {
+    pt: "As crianças estavam construindo castelos de areia enquanto os adultos jogavam vôlei de praia.",
+    en: "The children were building sandcastles while the adults played beach volleyball.",
+  },
+  {
+    pt: "Nós chegamos cedo na praia para conseguir um bom lugar perto da água e montamos nossas cadeiras e guarda-sóis.",
+    en: "We arrived early at the beach to get a good spot near the water and set up our chairs and umbrellas.",
+  },
+  {
+    pt: "Enquanto nadávamos no mar, vimos golfinhos nadando não muito longe da costa.",
+    en: "While we were swimming in the sea, we saw dolphins swimming not far from the shore.",
+  },
+  {
+    pt: "Eu estava lendo um livro debaixo do guarda-sol quando um vendedor ambulante passou vendendo água de coco.",
+    en: "I was reading a book under the umbrella when a street vendor passed by selling coconut water.",
+  },
+  {
+    pt: "Nós caminhamos pela orla da praia ao entardecer, aproveitando a brisa fresca e o som das ondas.",
+    en: "We walked along the beach promenade at dusk, enjoying the cool breeze and the sound of the waves.",
+  },
+  {
+    pt: "Depois de passar o dia na praia, fomos a um restaurante à beira-mar para jantar frutos do mar frescos.",
+    en: "After spending the day at the beach, we went to a seaside restaurant to have fresh seafood for dinner.",
+  },
+  {
+    pt: "Ela estava recolhendo conchas na beira da água quando encontrou uma estrela-do-mar.",
+    en: "She was collecting shells at the water's edge when she found a starfish.",
+  },
+  {
+    pt: "Nós estávamos jogando frisbee na areia quando o sol começou a se pôr, criando um belo pôr do sol.",
+    en: "We were playing frisbee on the sand when the sun began to set, creating a beautiful sunset.",
+  },
+  {
+    pt: "Amanhã, nós vamos visitar o novo museu que abriu na cidade.",
+    en: "Tomorrow, we will visit the new museum that opened in the city.",
+  },
+  {
+    pt: "Na próxima semana, ela vai começar um curso de culinária italiana.",
+    en: "Next week, she will start an Italian cooking course.",
+  },
+  {
+    pt: "Na segunda-feira, eu vou me encontrar com meu chefe para discutir o novo projeto.",
+    en: "On Monday, I will meet with my boss to discuss the new project.",
+  },
+  {
+    pt: "No fim de semana, nós vamos fazer uma viagem para a serra para aproveitar a natureza.",
+    en: "This weekend, we will take a trip to the mountains to enjoy nature.",
+  },
+  {
+    pt: "Eles vão lançar um novo filme no cinema na próxima sexta-feira.",
+    en: "They will release a new movie in the cinema next Friday.",
+  },
+  {
+    pt: "Eu vou participar de uma conferência sobre tecnologia na próxima quarta-feira.",
+    en: "I will attend a technology conference next Wednesday.",
+  },
+  {
+    pt: "Nós vamos organizar uma festa surpresa para o aniversário do nosso amigo.",
+    en: "We will organize a surprise party for our friend's birthday.",
+  },
+  {
+    pt: "Ela vai visitar os avós no próximo fim de semana.",
+    en: "She will visit her grandparents next weekend.",
+  },
+  {
+    pt: "Eles vão iniciar a construção da nova casa no mês que vem.",
+    en: "They will start building the new house next month.",
+  },
+  {
+    pt: "Na próxima terça-feira, eu vou ao médico para um check-up.",
+    en: "Next Tuesday, I will go to the doctor for a check-up.",
+  },
+  {
+    pt: "Em dez anos, nós vamos nos mudar para uma casa maior no campo.",
+    en: "In ten years, we will move to a bigger house in the countryside.",
+  },
+  {
+    pt: "Ela vai se aposentar após trinta anos de serviço na mesma empresa.",
+    en: "She will retire after thirty years of service at the same company.",
+  },
+  {
+    pt: "Daqui a vinte anos, eles vão celebrar seu jubileu de ouro de casamento.",
+    en: "In twenty years, they will celebrate their golden wedding anniversary.",
+  },
+  {
+    pt: "Eu vou escrever um livro sobre minhas experiências de vida quando tiver sessenta anos.",
+    en: "I will write a book about my life experiences when I am sixty years old.",
+  },
+  {
+    pt: "No futuro, a tecnologia vai avançar a um ponto em que os carros voadores serão comuns.",
+    en: "In the future, technology will advance to a point where flying cars will be common.",
+  },
+  {
+    pt: "Quando ele se aposentar, vai viajar pelo mundo para conhecer novas culturas.",
+    en: "When he retires, he will travel around the world to experience new cultures.",
+  },
+  {
+    pt: "Nós vamos plantar uma floresta no terreno da nossa família para as gerações futuras.",
+    en: "We will plant a forest on our family land for future generations.",
+  },
+  {
+    pt: "Em cinquenta anos, as cidades vão ser mais sustentáveis e ecologicamente corretas.",
+    en: "In fifty years, cities will be more sustainable and environmentally friendly.",
+  },
+  {
+    pt: "Ela vai receber um prêmio pelo seu trabalho inovador na ciência daqui a décadas.",
+    en: "She will receive an award for her innovative work in science decades from now.",
+  },
+  {
+    pt: "No futuro, nossos netos vão viver em um mundo muito diferente do que conhecemos hoje.",
+    en: "In the future, our grandchildren will live in a very different world from the one we know today.",
+  },
+  {
+    pt: "Um dia, os peixes vão aprender a falar e contar suas histórias.",
+    en: "One day, fish will learn to talk and tell their stories.",
+  },
+  {
+    pt: "No futuro, os humanos vão ser capazes de respirar debaixo d'água sem qualquer equipamento.",
+    en: "In the future, humans will be able to breathe underwater without any equipment.",
+  },
+  {
+    pt: "Eventualmente, nós vamos descobrir uma maneira de viajar no tempo e mudar o passado.",
+    en: "Eventually, we will discover a way to travel through time and change the past.",
+  },
+  {
+    pt: "Um dia, todas as pessoas no mundo vão concordar em tudo e não haverá mais conflitos.",
+    en: "One day, all people in the world will agree on everything and there will be no more conflicts.",
+  },
+  {
+    pt: "Os carros vão voar como aviões e não precisarão de estradas para se mover.",
+    en: "Cars will fly like airplanes and won't need roads to move.",
+  },
+  {
+    pt: "Em algum momento, os animais selvagens vão começar a viver em casas com humanos como animais de estimação.",
+    en: "At some point, wild animals will start living in houses with humans as pets.",
+  },
+  {
+    pt: "No futuro, todos os alimentos serão comprimidos que fornecem toda a nutrição necessária.",
+    en: "In the future, all food will be pills that provide all necessary nutrition.",
+  },
+  {
+    pt: "Um dia, as pessoas vão desenvolver a habilidade de se teletransportar instantaneamente para qualquer lugar do mundo.",
+    en: "One day, people will develop the ability to teleport instantly to any place in the world.",
+  },
+  {
+    pt: "No futuro, as máquinas vão fazer todo o trabalho humano, e ninguém mais precisará trabalhar.",
+    en: "In the future, machines will do all human work, and no one will need to work anymore.",
+  },
+  {
+    pt: "Um dia, todos os humanos vão viver em paz eterna sem qualquer doença ou sofrimento.",
+    en: "One day, all humans will live in eternal peace without any disease or suffering.",
+  },
+  {
+    pt: "Ele provavelmente nunca vai terminar aquele romance que começou há anos.",
+    en: "He will probably never finish that novel he started years ago.",
+  },
+  {
+    pt: "Ela disse que um dia vai escalar o Monte Everest, mas isso provavelmente nunca vai acontecer.",
+    en: "She said she would climb Mount Everest one day, but that will probably never happen.",
+  },
+  {
+    pt: "Nós sempre falamos sobre fazer uma viagem ao redor do mundo, mas nunca conseguimos planejar.",
+    en: "We always talk about taking a trip around the world, but we never manage to plan it.",
+  },
+  {
+    pt: "Ele prometeu que iria aprender a tocar piano, mas parece que isso nunca vai acontecer.",
+    en: "He promised he would learn to play the piano, but it seems that will never happen.",
+  },
+  {
+    pt: "Ela sempre sonhou em abrir seu próprio restaurante, mas talvez isso nunca se torne realidade.",
+    en: "She always dreamed of opening her own restaurant, but maybe that will never come true.",
+  },
+  {
+    pt: "Eles falaram que vão se mudar para o campo, mas é improvável que deixem a cidade.",
+    en: "They said they would move to the countryside, but it's unlikely they will leave the city.",
+  },
+  {
+    pt: "Eu sempre quis aprender a falar japonês, mas nunca encontrei tempo para isso.",
+    en: "I always wanted to learn to speak Japanese, but I never found time for it.",
+  },
+  {
+    pt: "Ela disse que vai viajar para a lua quando a tecnologia permitir, mas isso provavelmente nunca vai acontecer.",
+    en: "She said she would travel to the moon when technology allows, but that will probably never happen.",
+  },
+  {
+    pt: "Ele quer escrever uma autobiografia, mas duvido que ele realmente comece.",
+    en: "He wants to write an autobiography, but I doubt he will actually start.",
+  },
+  {
+    pt: "Nós sempre falamos sobre reformar a casa, mas parece que nunca vamos começar.",
+    en: "We always talk about renovating the house, but it seems we will never start.",
+  },
+  {
+    pt: "Eu nunca vou ganhar na loteria porque nunca compro bilhetes.",
+    en: "I will never win the lottery because I never buy tickets.",
+  },
+  {
+    pt: "Ela nunca vai conseguir falar com dinossauros, pois eles estão extintos há milhões de anos.",
+    en: "She will never be able to talk to dinosaurs because they have been extinct for millions of years.",
+  },
+  {
+    pt: "Eles nunca vão morar em Marte, já que não têm interesse em exploração espacial.",
+    en: "They will never live on Mars since they have no interest in space exploration.",
+  },
+  {
+    pt: "Nós nunca vamos ver porcos voando, pois isso é biologicamente impossível.",
+    en: "We will never see pigs fly because it is biologically impossible.",
+  },
+  {
+    pt: "Ele nunca vai se tornar presidente dos Estados Unidos porque não é cidadão americano.",
+    en: "He will never become President of the United States because he is not an American citizen.",
+  },
+  {
+    pt: "Eu nunca vou crescer novamente porque sou um adulto.",
+    en: "I will never grow taller again because I am an adult.",
+  },
+  {
+    pt: "Ela nunca vai viver para sempre, pois a imortalidade não existe.",
+    en: "She will never live forever because immortality does not exist.",
+  },
+  {
+    pt: "Nós nunca vamos poder respirar no espaço sem ajuda, pois não há ar lá.",
+    en: "We will never be able to breathe in space without assistance because there is no air there.",
+  },
+  {
+    pt: "Ele nunca vai viajar no tempo, já que isso é cientificamente impossível com a tecnologia atual.",
+    en: "He will never time travel because it is scientifically impossible with current technology.",
+  },
+  {
+    pt: "Ela nunca vai se transformar em uma sereia porque sereias não existem.",
+    en: "She will never transform into a mermaid because mermaids do not exist.",
+  },
+  {
+    pt: "No passado distante, as estrelas eram as únicas testemunhas dos segredos sussurrados pelo vento nas noites solitárias.",
+    en: "In the distant past, the stars were the only witnesses to the secrets whispered by the wind on lonely nights.",
+  },
+  {
+    pt: "No futuro, quando as flores desabrocharem em campos esquecidos, os sonhos da humanidade florescerão junto com elas.",
+    en: "In the future, when flowers bloom in forgotten fields, the dreams of humanity will blossom alongside them.",
+  },
+  {
+    pt: "No presente, cada pôr do sol pinta o céu com cores de esperança, lembrando-nos de que o amanhã sempre traz novas possibilidades.",
+    en: "In the present, each sunset paints the sky with colors of hope, reminding us that tomorrow always brings new possibilities.",
+  },
+  {
+    pt: "Um dia, quando os rios pararem de fluir, as lembranças de nossos risos ecoarão nas margens silenciosas.",
+    en: "One day, when rivers cease to flow, the memories of our laughter will echo on the silent banks.",
+  },
+  {
+    pt: "Ela sempre soube que seus sonhos eram como borboletas, frágeis e coloridas, voando livremente na brisa da manhã.",
+    en: "She always knew her dreams were like butterflies, fragile and colorful, flying freely in the morning breeze.",
+  },
+  {
+    pt: "No futuro, os livros contarão histórias de um tempo em que os corações falavam a mesma língua, apesar das distâncias.",
+    en: "In the future, books will tell stories of a time when hearts spoke the same language despite the distances.",
+  },
+  {
+    pt: "Naquele dia, quando o céu desabou em lágrimas, o amor floresceu como nunca antes, enraizado na terra molhada.",
+    en: "On that day, when the sky collapsed in tears, love blossomed like never before, rooted in the wet earth.",
+  },
+  {
+    pt: "Em algum lugar, uma criança observa as estrelas e sonha com mundos além do alcance de nossa imaginação.",
+    en: "Somewhere, a child watches the stars and dreams of worlds beyond the reach of our imagination.",
+  },
+  {
+    pt: "No silêncio da madrugada, as palavras não ditas entre nós se tornaram as mais profundas poesias de nosso amor.",
+    en: "In the silence of dawn, the unspoken words between us became the deepest poetry of our love.",
+  },
+  {
+    pt: "Um dia, quando as árvores antigas contarem suas histórias ao vento, nossos nomes serão sussurrados entre as folhas.",
+    en: "One day, when the ancient trees tell their stories to the wind, our names will be whispered among the leaves.",
+  },
+  {
+    pt: "A garota de Ipanema passa, e o mundo inteiro para só para vê-la caminhar.",
+    en: "The girl from Ipanema passes by, and the whole world stops just to watch her walk.",
+  },
+  {
+    pt: "No meio do caminho havia um barquinho a vela, navegando no mar azul de Copacabana.",
+    en: "In the middle of the way, there was a little sailboat, sailing in the blue sea of Copacabana.",
+  },
+  {
+    pt: "Quando o sol se põe, o céu se pinta de rosa, e meu coração canta uma melodia de amor.",
+    en: "When the sun sets, the sky is painted pink, and my heart sings a melody of love.",
+  },
+  {
+    pt: "A chuva caía suavemente, e com ela vinha a lembrança do nosso primeiro beijo.",
+    en: "The rain was falling gently, and with it came the memory of our first kiss.",
+  },
+  {
+    pt: "No balanço da rede, eu sonho com você e a brisa do mar embala nossa canção.",
+    en: "In the sway of the hammock, I dream of you and the sea breeze cradles our song.",
+  },
+  {
+    pt: "O cheiro do jasmim no ar me faz lembrar dos seus abraços e dos dias que não vão voltar.",
+    en: "The smell of jasmine in the air reminds me of your embraces and the days that won't come back.",
+  },
+  {
+    pt: "Caminhando pela praia, vejo nossas pegadas lado a lado, marcas do nosso amor na areia.",
+    en: "Walking along the beach, I see our footprints side by side, marks of our love in the sand.",
+  },
+  {
+    pt: "A lua cheia no céu ilumina a nossa dança, e o mundo inteiro parece parar para nos ver.",
+    en: "The full moon in the sky lights up our dance, and the whole world seems to stop to watch us.",
+  },
+  {
+    pt: "O violão toca suavemente, e cada acorde é uma declaração de amor ao luar.",
+    en: "The guitar plays softly, and each chord is a declaration of love under the moonlight.",
+  },
+  {
+    pt: "No jardim, as flores se abrem com a sua chegada, e a natureza celebra nosso encontro.",
+    en: "In the garden, the flowers bloom with your arrival, and nature celebrates our meeting.",
+  },
 ];
