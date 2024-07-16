@@ -2073,4 +2073,8 @@ var phrases = [
     pt: "Se você se levantar cedo, então terá mais tempo para estudar.",
     en: "If you get up early, then you will have more time to study.",
   },
+  {
+    pt: "noventa e oito mil, setecentos e sessenta e cinco",
+    en: "98765",
+  },
 ];

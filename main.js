@@ -21,12 +21,12 @@ async function readAloud_slow_pt(text) {
 ///////////////////////////////////
 
 async function readAloud(text, lang, rate = 1) {
-  await readAloud_helper(text, lang, rate);
+  // await readAloud_helper(text, lang, rate);
 
-  // const groups = splitIntoSubSentences(text);
-  // for (sentence of groups) {
-  //   await readAloud_helper(sentence, lang, rate);
-  // }
+  const groups = splitIntoSubSentences(text);
+  for (sentence of groups) {
+    await readAloud_helper(sentence, lang, rate);
+  }
 }
 
 async function readAloud_helper(text, lang, rate = 1) {
@@ -39,7 +39,7 @@ async function readAloud_helper(text, lang, rate = 1) {
 
       // Select a specific voice for Brazilian Portuguese if available
       const selectedVoice = voices.find(
-        (voice) => voice.lang === lang //&& voice.name.includes("Google")
+        (voice) => voice.lang === lang && voice.name.includes("Google")
       );
       if (selectedVoice) {
         utterance.voice = selectedVoice;
@@ -110,8 +110,8 @@ async function readAllPhrases() {
     if (!isReading) break;
     await waitForSeconds(2);
     if (!isReading) break;
-    // await readAloud_slow_pt(phrases[index].pt);
-    // if (!isReading) break;
+    await readAloud_slow_pt(phrases[index].pt);
+    if (!isReading) break;
     // await waitForSeconds(2);
     // if (!isReading) break;
     // await readAloud_pt(phrases[index].pt);
