@@ -29,6 +29,11 @@ async function readAloud(text, lang, rate = 1) {
   }
 }
 
+function resumeInfinity() {
+  window.speechSynthesis.resume();
+  timeoutResumeInfinity = setTimeout(resumeInfinity, 1000);
+}
+
 async function readAloud_helper(text, lang, rate = 1) {
   return new Promise((resolve, reject) => {
     // console.log(">>");
@@ -45,15 +50,19 @@ async function readAloud_helper(text, lang, rate = 1) {
         utterance.voice = selectedVoice;
       }
 
+      utterance.onstart = function (event) {
+        resumeInfinity();
+      };
       utterance.onend = function (event) {
         // console.log('Speech synthesis finished.');
         // console.log("<< ++");
+        clearTimeout(timeoutResumeInfinity);
         resolve(); // Resolve the promise when speech synthesis is finished
       };
 
       utterance.onerror = function (event) {
-        // console.log("<< --");
-
+        console.error("Speech error: " + event.error);
+        clearTimeout(timeoutResumeInfinity);
         reject(event.error); // Reject the promise if there's an error during speech synthesis
       };
 

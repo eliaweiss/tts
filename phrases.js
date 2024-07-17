@@ -2517,4 +2517,60 @@ var phrases = [
     pt: "No jardim, as flores se abrem com a sua chegada, e a natureza celebra nosso encontro.",
     en: "In the garden, the flowers bloom with your arrival, and nature celebrates our meeting.",
   },
+  {
+    pt: "Quando ele chegar, avise-me.",
+    en: "When he arrives, let me know.",
+  },
+  {
+    pt: "Assim que terminarmos o trabalho, podemos sair.",
+    en: "As soon as we finish the work, we can leave.",
+  },
+  {
+    pt: "Se eu encontrar a chave, te aviso.",
+    en: "If I find the key, I'll let you know.",
+  },
+  {
+    pt: "Quando vocês estiverem prontos, podemos começar.",
+    en: "When you all are ready, we can start.",
+  },
+  {
+    pt: "Se eles vierem amanhã, faremos uma festa.",
+    en: "If they come tomorrow, we'll have a party.",
+  },
+  {
+    pt: "Quando você tiver tempo, me ligue.",
+    en: "When you have time, call me.",
+  },
+  {
+    pt: "Se você fizer isso, ficará feliz.",
+    en: "If you do this, you will be happy.",
+  },
+  {
+    pt: "Assim que ele vir a notícia, ele entenderá.",
+    en: "As soon as he sees the news, he will understand.",
+  },
+  {
+    pt: "Se nós pudermos ajudar, nos avise.",
+    en: "If we can help, let us know.",
+  },
+  {
+    pt: "Quando ela disser a verdade, tudo ficará claro.",
+    en: "When she tells the truth, everything will be clear.",
+  },
+  {
+    pt: "Se eu souber a resposta, te conto.",
+    en: "If I know the answer, I'll tell you.",
+  },
+  {
+    pt: "Quando você encontrar o livro, me empreste.",
+    en: "When you find the book, lend it to me.",
+  },
+  {
+    pt: "Assim que ele entender a lição, poderá explicar aos outros.",
+    en: "As soon as he understands the lesson, he can explain it to others.",
+  },
+  {
+    pt: "Se nós tivermos tempo, faremos um piquenique.",
+    en: "If we have time, we'll have a picnic.",
+  },
 ];
