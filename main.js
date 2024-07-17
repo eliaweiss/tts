@@ -104,57 +104,61 @@ index = 0;
 phrases = randomPermutation(phrases);
 ///////////////////////////////////
 async function readAllPhrases() {
-  document.getElementById("playAllContainer").classList.remove("hidden");
+  try {
+    document.getElementById("playAllContainer").classList.remove("hidden");
 
-  if (isReading || isPlaying) {
-    isReading = false; // Stop reading if already running
-    document.querySelector("#playStatus").classList.add("hidden"); // Toggle hidden class
-    return;
-  }
+    if (isReading || isPlaying) {
+      isReading = false; // Stop reading if already running
+      document.querySelector("#playStatus").classList.add("hidden"); // Toggle hidden class
+      return;
+    }
 
-  isPlaying = isReading = true; // Set to true at the beginning
-  document.querySelector("#playStatus").classList.remove("hidden"); // Toggle hidden class
+    isPlaying = isReading = true; // Set to true at the beginning
+    document.querySelector("#playStatus").classList.remove("hidden"); // Toggle hidden class
 
-  while (isReading) {
-    console.log(
-      "index: " + index + "/" + phrases.length + " - " + phrases[index].en
-    );
+    while (isReading) {
+      console.log(
+        "index: " + index + "/" + phrases.length + " - " + phrases[index].en
+      );
 
-    // Update current phrase display
-    document.querySelector("#playAllContainer .pt").textContent =
-      phrases[index].pt;
-    document.querySelector("#playAllContainer .en").textContent =
-      index + "/" + phrases.length + " - "; //+ phrases[index].en;
+      // Update current phrase display
+      document.querySelector("#playAllContainer .pt").textContent =
+        phrases[index].pt;
+      document.querySelector("#playAllContainer .en").textContent =
+        index + "/" + phrases.length + " - "; //+ phrases[index].en;
 
-    await readAloud_pt(phrases[index].pt);
-    if (!isReading) break;
-    await waitForSeconds(2);
-    if (!isReading) break;
-    await readAloud_slow_pt(phrases[index].pt);
-    if (!isReading) break;
-    // await waitForSeconds(2);
-    // if (!isReading) break;
-    // await readAloud_pt(phrases[index].pt);
-    if (!isReading) break;
-    await waitForSeconds(1);
-    if (!isReading) break;
-
-    document.querySelector("#playAllContainer .en").textContent =
-      index + "/" + phrases.length + " - " + phrases[index].en;
-    if (phrases[index].en) {
-      await readAloud_en(phrases[index].en);
+      await readAloud_pt(phrases[index].pt);
+      if (!isReading) break;
+      await waitForSeconds(2);
+      if (!isReading) break;
+      await readAloud_slow_pt(phrases[index].pt);
+      if (!isReading) break;
+      // await waitForSeconds(2);
+      // if (!isReading) break;
+      // await readAloud_pt(phrases[index].pt);
+      if (!isReading) break;
       await waitForSeconds(1);
-    }
-    if (!isReading) break;
+      if (!isReading) break;
 
-    index++;
-    if (index >= phrases.length) {
-      index = 0;
-      phrases = randomPermutation(phrases);
+      document.querySelector("#playAllContainer .en").textContent =
+        index + "/" + phrases.length + " - " + phrases[index].en;
+      if (phrases[index].en) {
+        await readAloud_en(phrases[index].en);
+        await waitForSeconds(1);
+      }
+      if (!isReading) break;
+
+      index++;
+      if (index >= phrases.length) {
+        index = 0;
+        phrases = randomPermutation(phrases);
+      }
     }
+
+    isPlaying = false; // Set to false after reading all phrases
+  } catch (e) {
+    console.log(e);
   }
-
-  isPlaying = false; // Set to false after reading all phrases
 }
 ///////////////////////////////////
 
