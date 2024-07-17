@@ -35,10 +35,13 @@ function resumeInfinity() {
 }
 
 var myTimeout;
+var sleepTime = 2000;
 function myTimer() {
-  // window.speechSynthesis.pause();
+  // console.log("ttt");
+  window.speechSynthesis.pause();
   window.speechSynthesis.resume();
-  myTimeout = setTimeout(myTimer, 10000);
+  clearTimeout(myTimeout);
+  myTimeout = setTimeout(myTimer, sleepTime);
 }
 
 async function readAloud_helper(text, lang, rate = 1) {
@@ -58,7 +61,7 @@ async function readAloud_helper(text, lang, rate = 1) {
       }
 
       // utterance.onstart = function (event) {};
-      myTimeout = setTimeout(myTimer, 10000);
+      myTimeout = setTimeout(myTimer, sleepTime);
       utterance.onend = function (event) {
         // console.log('Speech synthesis finished.');
         // console.log("<< ++");
@@ -74,10 +77,10 @@ async function readAloud_helper(text, lang, rate = 1) {
 
       // # https://stackoverflow.com/questions/21947730/chrome-speech-synthesis-with-longer-texts
 
-      console.log(utterance);
-      setTimeout(() => {
-        window.speechSynthesis.speak(utterance);
-      }, 100);
+      // console.log(utterance);
+      // setTimeout(() => {
+      window.speechSynthesis.speak(utterance);
+      // }, 100);
     } catch {
       //   console.log("<< --");
 
