@@ -186,3 +186,8 @@ function randomPermutation(data) {
   }
   return perm;
 }
+
+function cancel() {
+  isPlaying = false;
+  speechSynthesis.cancel();
+}
