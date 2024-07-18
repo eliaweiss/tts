@@ -120,6 +120,7 @@ async function readAllPhrases() {
     document.querySelector("#playStatus").classList.remove("hidden"); // Toggle hidden class
 
     while (isReading) {
+      skipFlag = false;
       console.log(
         "index: " + index + "/" + phrases.length + " - " + phrases[index].en
       );
@@ -132,16 +133,24 @@ async function readAllPhrases() {
 
       await readAloud_pt(phrases[index].pt);
       if (!isReading) break;
+      if (skipFlag) continue;
       await waitForSeconds(2);
       if (!isReading) break;
+      if (skipFlag) continue;
+
       await readAloud_slow_pt(phrases[index].pt);
       if (!isReading) break;
+      if (skipFlag) continue;
+
       // await waitForSeconds(2);
       // if (!isReading) break;
       // await readAloud_pt(phrases[index].pt);
       if (!isReading) break;
+      if (skipFlag) continue;
+
       await waitForSeconds(1);
       if (!isReading) break;
+      if (skipFlag) continue;
 
       document.querySelector("#playAllContainer .en").textContent =
         index + "/" + phrases.length + " - " + phrases[index].en;
@@ -193,4 +202,9 @@ function randomPermutation(data) {
 function cancel() {
   isPlaying = false;
   speechSynthesis.cancel();
+}
+
+function skipLoop() {
+  index++;
+  skipFlag = true;
 }
