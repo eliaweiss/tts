@@ -70,7 +70,7 @@ async function readAloud_helper(text, lang, rate = 1) {
       };
 
       utterance.onerror = function (event) {
-        console.error("Speech error: " + event.error);
+        console.log("Speech error: " + event.error);
         clearTimeout(myTimeout);
         reject(event.error); // Reject the promise if there's an error during speech synthesis
       };
@@ -107,19 +107,19 @@ index = 0;
 phrases = randomPermutation(phrases);
 ///////////////////////////////////
 async function readAllPhrases() {
-  try {
-    document.getElementById("playAllContainer").classList.remove("hidden");
+  document.getElementById("playAllContainer").classList.remove("hidden");
 
-    if (isReading || isPlaying) {
-      isReading = false; // Stop reading if already running
-      document.querySelector("#playStatus").classList.add("hidden"); // Toggle hidden class
-      return;
-    }
+  if (isReading || isPlaying) {
+    isReading = false; // Stop reading if already running
+    document.querySelector("#playStatus").classList.add("hidden"); // Toggle hidden class
+    return;
+  }
 
-    isPlaying = isReading = true; // Set to true at the beginning
-    document.querySelector("#playStatus").classList.remove("hidden"); // Toggle hidden class
+  isPlaying = isReading = true; // Set to true at the beginning
+  document.querySelector("#playStatus").classList.remove("hidden"); // Toggle hidden class
 
-    while (isReading) {
+  while (isReading) {
+    try {
       skipFlag = false;
       console.log(
         "index: " + index + "/" + phrases.length + " - " + phrases[index].en
@@ -165,12 +165,12 @@ async function readAllPhrases() {
         index = 0;
         phrases = randomPermutation(phrases);
       }
+    } catch (e) {
+      console.log(e);
     }
-
-    isPlaying = false; // Set to false after reading all phrases
-  } catch (e) {
-    console.log(e);
   }
+
+  isPlaying = false; // Set to false after reading all phrases
 }
 ///////////////////////////////////
 
@@ -205,6 +205,7 @@ function cancel() {
 }
 
 function skipLoop() {
+  speechSynthesis.cancel();
   index++;
   skipFlag = true;
 }
